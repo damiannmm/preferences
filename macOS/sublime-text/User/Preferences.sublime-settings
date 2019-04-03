@@ -1,0 +1,64 @@
+{
+	"auto_complete_commit_on_tab": true,
+	"color_scheme": "Packages/Theme - Afterglow/Afterglow.tmTheme",
+	"default_font_size": 12,
+	"draw_centered": false,
+	"draw_minimap_border": true,
+	"ensure_newline_at_eof_on_save": false,
+	"fade_fold_buttons": false,
+	"file_exclude_patterns":
+	[
+		"*.a",
+		"*.class",
+		"*.db",
+		"*.dll",
+		"*.dylib",
+		"*.exe",
+		"*.idb",
+		"*.lib",
+		"*.ncb",
+		"*.o",
+		"*.obj",
+		"*.pdb",
+		"*.psd",
+		"*.pyc",
+		"*.pyo",
+		"*.sdf",
+		"*.so",
+		"*.sublime-workspace",
+		"*.sublime-snippet",
+		"*.suo",
+		".DS_Store",
+		".netrc",
+		"a.out"
+	],
+	"folder_exclude_patterns":
+	[
+		".*",
+		"_site"
+	],
+	"font_face": "Fira Code",
+	"font_size": 12,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	],
+	"line_numbers": true,
+	"open_files_in_new_window": false,
+	"rulers":
+	[
+		80,
+		100
+	],
+	"scroll_past_end": false,
+	"show_definitions": false,
+	"show_panel_on_build": false,
+	"status_bar_brighter": true,
+	"tabs_small": true,
+	"theme": "Afterglow.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": false,
+	"word_wrap": false
+}

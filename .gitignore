@@ -1,0 +1,4 @@
+macOS/bash/config/configstore
+macOS/sublime-text/User/oscrypto-ca-bundle.crt
+macOS/sublime-text/User/Package Control**
+!macOS/sublime-text/User/Package Control.sublime-settings

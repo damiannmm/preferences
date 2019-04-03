@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+# core variables
+export EDITOR="subl -w"
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+export HISTDUP="prev"
+export HISTSIZE=20000
+export HISTFILESIZE=10000
+export HISTIGNORE="ls:* --help"
+
+export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+
+alias ls='ls -FG'
+
+# Always lists working directory while cd
+function __cd()
+{
+    cd -L "$@"
+    if $([[ $(ls | wc -l) -le 20 ]]); then
+        ls
+    fi
+}
+alias cd="__cd"
+
+# Print both symbolic and physical working directory
+function __pwd()
+{
+    pwd
+    if $([[ "$(\pwd)" != "$(\pwd -P)" ]]); then
+        pwd -P
+    fi
+}
+alias pwd="__pwd"
+
+# Uses sublime text in background for man pages
+function __man()
+{
+    man "$@" | col -b | subl -w &
+}
+alias man="__man"

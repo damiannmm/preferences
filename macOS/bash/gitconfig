@@ -1,0 +1,12 @@
+[user]
+	email = damiann.mm@gmail.com
+[credential]
+	helper = store
+[push]
+	default = simple
+[core]
+	excludesfile = ~/.gitignore
+[format]
+	pretty = oneline
+[status]
+	short = true

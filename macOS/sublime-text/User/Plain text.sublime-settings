@@ -1,0 +1,7 @@
+// These settings override both User and Default settings for the Plain text syntax
+{
+	"detect_indentation": false,
+	"tab_size": 8,
+	"translate_tabs_to_spaces": false,
+	"word_wrap": false
+}
