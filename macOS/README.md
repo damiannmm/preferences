@@ -6,7 +6,8 @@
 │   ├── bash_aliases <- ~/.bash_aliases@
 │   ├── bash_profile <- ~/.bash_profile@
 │   ├── bashrc <- ~/.bashrc@
-│   ├── config <- ~/.config@
+│   ├── config
+│   │   └── powerline-shell <- ~/.config/powerline-shell@
 │   ├── gitconfig <- ~/.gitconfig@
 │   ├── gitignore <- ~/.gitignore@
 │   └── inputrc <- ~/.inputrc@

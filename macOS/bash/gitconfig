@@ -6,7 +6,5 @@
 	default = simple
 [core]
 	excludesfile = ~/.gitignore
-[format]
-	pretty = oneline
 [status]
 	short = true
