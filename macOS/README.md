@@ -10,7 +10,8 @@
 │   │   └── powerline-shell <- ~/.config/powerline-shell@
 │   ├── gitconfig <- ~/.gitconfig@
 │   ├── gitignore <- ~/.gitignore@
-│   └── inputrc <- ~/.inputrc@
+│   ├── inputrc <- ~/.inputrc@
+│   └── octaverc <- ~/.octaverc@
 ├── sublime-text
 │   ├── C++ <- "~/Library/Application Support/Sublime Text 3/Packages/C++@"
 │   ├── Python <- "~/Library/Application Support/Sublime Text 3/Packages/Python@"
