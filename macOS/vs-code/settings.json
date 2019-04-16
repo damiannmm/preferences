@@ -31,15 +31,6 @@
     "files.associations": {
         "code-stdin-*.txt": "diff"
     },
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/venv*": true,
-        "**/migrations": true
-    },
     "files.insertFinalNewline": false,
     "files.trimTrailingWhitespace": false,
     "indentRainbow.errorColor": "rgba(128,32,32,0.3)",
@@ -59,7 +50,8 @@
     "python.linting.pylintEnabled": false,
     "python.pythonPath": "/usr/local/bin/python3",
     "python.terminal.activateEnvironment": false,
-    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.cursorBlinking": true,
+    // "terminal.integrated.fontFamily": "Fira Code",
     "terminal.integrated.lineHeight": 1.1,
     "window.openFilesInNewWindow": "off",
     "workbench.activityBar.visible": false,
