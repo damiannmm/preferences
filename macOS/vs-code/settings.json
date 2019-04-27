@@ -54,7 +54,9 @@
     // "terminal.integrated.fontFamily": "Fira Code",
     "terminal.integrated.lineHeight": 1.1,
     "window.openFilesInNewWindow": "off",
+    "window.zoomLevel": 0,
     "workbench.activityBar.visible": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.iconTheme": "vscode-icons",
     "workbench.settings.editor": "json",
     "zenMode.hideTabs": false,
@@ -64,7 +66,5 @@
     ],
     "[html]": {
         "editor.formatOnSave": false
-    },
-    "window.zoomLevel": 0,
-    "workbench.editor.enablePreviewFromQuickOpen": false
+    }
 }
