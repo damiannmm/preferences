@@ -2,7 +2,11 @@ macOS/bash/config/configstore
 macOS/sublime-text/User/oscrypto-ca-bundle.crt
 macOS/sublime-text/User/RainbowCSV.sublime-color-scheme
 macOS/sublime-text/User/rbql_table_index
-
 macOS/sublime-text/User/Package Control**
-
 !macOS/sublime-text/User/Package Control.sublime-settings
+
+Ubuntu/sublime-text/User/oscrypto-ca-bundle.crt
+Ubuntu/sublime-text/User/RainbowCSV.sublime-color-scheme
+Ubuntu/sublime-text/User/rbql_table_index
+Ubuntu/sublime-text/User/Package Control**
+!Ubuntu/sublime-text/User/Package Control.sublime-settings

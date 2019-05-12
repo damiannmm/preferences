@@ -1,0 +1,15 @@
+[
+	{ "keys": ["ctrl+t"], "command": "new_file" },
+	{ "keys": ["ctrl+shift+t"], "command": "reopen_last_file" },
+	{ "keys": ["ctrl+n"], "command": "new_window" },
+	{ "keys": ["ctrl+0"], "command": "reset_font_size_to_user_defaults" },
+	{ "keys": ["ctrl+tab"], "command": "next_view" },
+	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+	{ "keys": ["ctrl+g"], "command": "find_next" },
+	{ "keys": ["ctrl+shift+g"], "command": "find_prev" },
+	{ "keys": ["ctrl+alt+g"], "command": "find_all_under" },
+	{ "keys": ["ctrl+;"], "command": "semicolon_insert" },
+	{ "keys": ["ctrl+shift+;"], "command": "colon_insert" },
+	{ "keys": ["ctrl+,"], "command": "comma_insert" },
+	{ "keys": ["ctrl+shift+n"], "command": "open_terminal" },
+]

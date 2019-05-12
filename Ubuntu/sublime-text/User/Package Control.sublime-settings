@@ -1,0 +1,30 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"Anaconda",
+		"BracketHighlighter",
+		"C++11",
+		"DocBlockr",
+		"DocPy",
+		"GhostText",
+		"GitGutter",
+		"GNU Octave Completions",
+		"MarkdownEditing",
+		"Package Control",
+		"PackageResourceViewer",
+		"PlainTasks",
+		"Pretty JSON",
+		"rainbow_csv",
+		"rsub",
+		"SideBarEnhancements",
+		"sublime-text-2-buildview",
+		"SyncedSideBar",
+		"Terminal",
+		"Theme - Afterglow"
+	]
+}

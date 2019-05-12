@@ -1,0 +1,16 @@
+{
+	"shell_cmd": "python ${file_name}",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${file_path}",
+	"variants": [
+		{
+			"name": "With Output",
+			"shell_cmd": "python ${file_name} > output.txt"
+		},
+		{
+			"name": "With Input-Output",
+			"shell_cmd": "python ${file_name} < input.txt > output.txt"
+		}
+	],
+	"selector": "source.python",
+}

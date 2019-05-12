@@ -1,1 +1,32 @@
+#!/usr/bin/env bash
+
+export EDITOR="subl -w"
+
 alias open="xdg-open"
+
+# Always lists working directory while cd
+function __cd()
+{
+    cd -L "$@"
+    if $([[ $(ls | wc -l) -le 20 ]]); then
+        ls
+    fi
+}
+alias cd="__cd"
+
+# Print both symbolic and physical working directory
+function __pwd()
+{
+    pwd
+    if $([[ "$(\pwd)" != "$(\pwd -P)" ]]); then
+        pwd -P
+    fi
+}
+alias pwd="__pwd"
+
+# Uses sublime text in background for man pages
+function __man()
+{
+    man "$@" | vipe > /dev/null &
+}
+alias man="__man"
