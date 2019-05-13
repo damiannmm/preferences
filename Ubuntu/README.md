@@ -13,7 +13,8 @@
 │   ├── gitconfig <- ~/.gitconfig@
 │   ├── gitignore <- ~/.gitignore@
 │   ├── inputrc <- ~/.inputrc@
-│   └── octaverc <- ~/.octaverc@
+│   ├── profile <- ~/.profile@
+│   └── vimrc <- ~/.vimrc@
 ├── sublime-text
 │   ├── C++ <- "~/.config/sublime-text-3/Packages/C++@"
 │   ├── Python <- "~/.config/sublime-text-3/Packages/Python@"
