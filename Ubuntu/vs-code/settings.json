@@ -6,7 +6,7 @@
         [
             "#ddd",
             "#ddd",
-            "#ddd",
+            "#ddd"
         ],
         "#ddd"
     ],
@@ -51,9 +51,8 @@
     "python.pythonPath": "/usr/local/bin/python3",
     "python.terminal.activateEnvironment": false,
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.fontFamily": "Fira Code",
     "window.openFilesInNewWindow": "off",
-    "window.zoomLevel": 0.1,
+    "window.zoomLevel": 0.5,
     "workbench.activityBar.visible": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.iconTheme": "vscode-icons",
