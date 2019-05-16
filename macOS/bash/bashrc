@@ -37,13 +37,6 @@ if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
 
-if [ -d ~/.phabricator ]; then
-    export PATH="$HOME/.phabricator/arcanist/bin:$PATH"
-    source ~/.phabricator/arcanist/resources/shell/bash-completion
-fi
-
-eval "$(rbenv init -)"
-
 function _update_ps1() {
     PS1=$(powerline-shell $?)
 }
@@ -57,15 +50,4 @@ fi
 # sources /etc/bash.bashrc).
 if [ -f /usr/local/etc/bash_completion ]; then
     source /usr/local/etc/bash_completion
-fi
-
-# activate virtual environment if exist in current directory.
-if [ -f venv/bin/activate ]; then
-    source venv/bin/activate
-    echo "source $PWD/venv/bin/activate"
-fi
-
-# enable django bash completion
-if [ -f ~/.django_bash_completion ]; then
-    source ~/.django_bash_completion
 fi
