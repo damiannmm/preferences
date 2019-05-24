@@ -52,7 +52,7 @@
     "python.terminal.activateEnvironment": false,
     "terminal.integrated.cursorBlinking": true,
     "window.openFilesInNewWindow": "off",
-    "window.zoomLevel": 0.5,
+    "window.zoomLevel": 0.2,
     "workbench.activityBar.visible": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.iconTheme": "vscode-icons",
