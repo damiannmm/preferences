@@ -6,5 +6,6 @@
 	default = simple
 [core]
 	excludesfile = ~/.gitignore
+	ignorecase = true
 [status]
 	short = true

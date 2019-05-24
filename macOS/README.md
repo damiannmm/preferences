@@ -7,11 +7,14 @@
 │   ├── bash_profile <- ~/.bash_profile@
 │   ├── bashrc <- ~/.bashrc@
 │   ├── config
+│   │   ├── karabiner
+│   │   │   └── karabiner.json <- ~/.config/karabiner/karabiner.json@
 │   │   └── powerline-shell <- ~/.config/powerline-shell@
 │   ├── gitconfig <- ~/.gitconfig@
 │   ├── gitignore <- ~/.gitignore@
 │   ├── inputrc <- ~/.inputrc@
-│   └── octaverc <- ~/.octaverc@
+│   ├── octaverc <- ~/.octaverc@
+│   └── vimrc <- ~/.vimrc@
 ├── sublime-text
 │   ├── C++ <- "~/Library/Application Support/Sublime Text 3/Packages/C++@"
 │   ├── Python <- "~/Library/Application Support/Sublime Text 3/Packages/Python@"

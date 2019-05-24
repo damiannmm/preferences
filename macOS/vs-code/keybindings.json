@@ -15,12 +15,12 @@
     { "key": "cmd+,", "command": "extension.toggleComma", "when": "editorTextFocus" },
     // { "key": "ctrl+c", "command": "code-runner.stop", "when": "editorTextFocus" },
     { "key": "cmd+0", "command": "workbench.action.zoomReset" },
-    { 
-        "key": "cmd+k cmd+d",
-        "command": "runInTerminal.run",
-        "args": {
-            "cmd": "$(which git) diff HEAD | col -b | subl -w &",
-            "match": ".*"
-        }
-    },
+    // { 
+    //     "key": "cmd+k cmd+d",
+    //     "command": "runInTerminal.run",
+    //     "args": {
+    //         "cmd": "$(which git) diff HEAD | col -b | subl -w &",
+    //         "match": ".*"
+    //     }
+    // },
 ]

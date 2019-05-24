@@ -41,15 +41,15 @@
         "rgba(16,16,16,0.4)",
         "rgba(16,16,16,0.2)"
     ],
-    "python.formatting.autopep8Path": "/usr/local/bin/autopep8",
-    "python.formatting.autopep8Args": [
-        "--max-line-length 100"
-    ],
-    "python.linting.flake8Enabled": true,
-    "python.linting.pydocstyleEnabled": false,
-    "python.linting.pylintEnabled": false,
-    "python.pythonPath": "/usr/local/bin/python3",
-    "python.terminal.activateEnvironment": false,
+    // "python.formatting.autopep8Path": "/usr/local/bin/autopep8",
+    // "python.formatting.autopep8Args": [
+    //     "--max-line-length 100"
+    // ],
+    // "python.linting.flake8Enabled": true,
+    // "python.linting.pydocstyleEnabled": false,
+    // "python.linting.pylintEnabled": false,
+    // "python.pythonPath": "/usr/local/bin/python3",
+    // "python.terminal.activateEnvironment": false,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.lineHeight": 1.1,
     "window.openFilesInNewWindow": "off",
@@ -60,9 +60,9 @@
     "workbench.settings.editor": "json",
     "zenMode.hideTabs": false,
     "zenMode.hideLineNumbers": false,
-    "python.linting.flake8Args": [
-        "--max-line-length=100"
-    ],
+    // "python.linting.flake8Args": [
+    //     "--max-line-length=100"
+    // ],
     "[html]": {
         "editor.formatOnSave": false
     }
