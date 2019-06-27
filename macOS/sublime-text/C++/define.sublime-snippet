@@ -1,0 +1,10 @@
+<snippet>
+    <description>#define …</description>
+    <content>
+        <![CDATA[
+#define ${1:SYMBOL} ${2:value}
+]]>
+    </content>
+    <tabTrigger>define</tabTrigger>
+    <scope>source.c, source.c, source.c++, source.c++11</scope>
+</snippet>

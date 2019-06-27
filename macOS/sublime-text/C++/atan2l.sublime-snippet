@@ -1,12 +1,10 @@
 <snippet>
-    <description>struct {…}</description>
+    <description>atan2l</description>
     <content>
         <![CDATA[
-struct ${1:\$} {
-	$0
-};
+__builtin_atan2l
 ]]>
     </content>
-    <tabTrigger>struct</tabTrigger>
+    <tabTrigger>atan2l</tabTrigger>
     <scope>source.c, source.c++, source.c++11</scope>
 </snippet>

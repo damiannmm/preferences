@@ -1,12 +1,10 @@
 <snippet>
-    <description>struct {…}</description>
+    <description>stoi</description>
     <content>
         <![CDATA[
-struct ${1:\$} {
-	$0
-};
+stoi
 ]]>
     </content>
-    <tabTrigger>struct</tabTrigger>
+    <tabTrigger>stoi</tabTrigger>
     <scope>source.c, source.c++, source.c++11</scope>
 </snippet>
