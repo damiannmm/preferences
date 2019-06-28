@@ -1,12 +1,10 @@
 <snippet>
-    <description>struct {…}</description>
+    <description>while (…)</description>
     <content>
         <![CDATA[
-struct ${1:\$} {
-	$0
-};
+while (${1:/* condition */}) 
 ]]>
     </content>
-    <tabTrigger>struct</tabTrigger>
+    <tabTrigger>while</tabTrigger>
     <scope>source.c, source.c++, source.c++11</scope>
 </snippet>

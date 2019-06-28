@@ -1,0 +1,10 @@
+<snippet>
+    <description>std::next_permutation</description>
+    <content>
+        <![CDATA[
+std::next_permutation(${1:v}${2:.begin()}, ${1:v}${3:.end()});
+]]>
+    </content>
+    <tabTrigger>next_permutation</tabTrigger>
+    <scope>source.c++, source.c++11</scope>
+</snippet>

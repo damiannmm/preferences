@@ -1,12 +1,10 @@
 <snippet>
-    <description>struct {…}</description>
+    <description>begin(), ….end()</description>
     <content>
         <![CDATA[
-struct ${1:\$} {
-	$0
-};
+begin(), ${1:v}.end()
 ]]>
     </content>
-    <tabTrigger>struct</tabTrigger>
+    <tabTrigger>beginend</tabTrigger>
     <scope>source.c, source.c++, source.c++11</scope>
 </snippet>

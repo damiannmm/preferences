@@ -1,12 +1,10 @@
 <snippet>
-    <description>struct {…}</description>
+    <description>min</description>
     <content>
         <![CDATA[
-struct ${1:\$} {
-	$0
-};
+min
 ]]>
     </content>
-    <tabTrigger>struct</tabTrigger>
+    <tabTrigger>min</tabTrigger>
     <scope>source.c, source.c++, source.c++11</scope>
 </snippet>
