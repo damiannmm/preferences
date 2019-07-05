@@ -1,12 +1,10 @@
 <snippet>
-    <description>struct {…}</description>
+    <description>sync_with_stdio</description>
     <content>
         <![CDATA[
-struct ${1:\$} {
-	$0
-};
+std::ios_base::sync_with_stdio(${1:false});
 ]]>
     </content>
-    <tabTrigger>struct</tabTrigger>
+    <tabTrigger>sync</tabTrigger>
     <scope>source.c, source.c++, source.c++11</scope>
 </snippet>

@@ -1,0 +1,10 @@
+<snippet>
+    <description>make_pair</description>
+    <content>
+        <![CDATA[
+make_pair
+]]>
+    </content>
+    <tabTrigger>mp</tabTrigger>
+    <scope>source.c, source.c, source.c++, source.c++11</scope>
+</snippet>

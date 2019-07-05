@@ -1,12 +1,10 @@
 <snippet>
-    <description>struct {…}</description>
+    <description>fabsl</description>
     <content>
         <![CDATA[
-struct ${1:\$} {
-	$0
-};
+__builtin_fabsl
 ]]>
     </content>
-    <tabTrigger>struct</tabTrigger>
+    <tabTrigger>fabsl</tabTrigger>
     <scope>source.c, source.c++, source.c++11</scope>
 </snippet>

@@ -1,0 +1,10 @@
+<snippet>
+    <description>std::priority_queue</description>
+    <content>
+        <![CDATA[
+std::priority_queue<${1:int}, std::vector<${1:int}>, std::greater<${1:int}>> q$0;
+]]>
+    </content>
+    <tabTrigger>priority_queue</tabTrigger>
+    <scope>source.c++, source.c++11</scope>
+</snippet>

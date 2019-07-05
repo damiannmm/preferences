@@ -1,12 +1,10 @@
 <snippet>
-    <description>struct {…}</description>
+    <description>swap</description>
     <content>
         <![CDATA[
-struct ${1:\$} {
-	$0
-};
+swap
 ]]>
     </content>
-    <tabTrigger>struct</tabTrigger>
+    <tabTrigger>swap</tabTrigger>
     <scope>source.c, source.c++, source.c++11</scope>
 </snippet>

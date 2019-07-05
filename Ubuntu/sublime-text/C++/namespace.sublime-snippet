@@ -1,0 +1,10 @@
+<snippet>
+    <description>use namespace …</description>
+    <content>
+        <![CDATA[
+using namespace ${1:std};
+]]>
+    </content>
+    <tabTrigger>using</tabTrigger>
+    <scope>source.c++, source.c++11</scope>
+</snippet>
