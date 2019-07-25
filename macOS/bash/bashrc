@@ -45,12 +45,14 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
-# added by Anaconda2 4.0.0 installer
-export PATH="$HOME/anaconda2/bin:$PATH"
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
 if [ -f /usr/local/etc/bash_completion ]; then
     source /usr/local/etc/bash_completion
+fi
+
+# activate virtual environment if exist in current directory
+if [-f venv/bin/activate ]; then
+    source venv/bin/activate
 fi

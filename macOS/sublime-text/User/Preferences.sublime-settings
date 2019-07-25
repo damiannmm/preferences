@@ -1,4 +1,5 @@
 {
+	"auto_complete": false,
 	"auto_complete_commit_on_tab": true,
 	"color_scheme": "Packages/Theme - Afterglow/Afterglow.tmTheme",
 	"default_font_size": 12,
@@ -42,6 +43,7 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"Anaconda",
 		"Markdown",
 		"Vintage"
 	],
