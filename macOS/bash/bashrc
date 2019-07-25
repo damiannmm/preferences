@@ -53,6 +53,6 @@ if [ -f /usr/local/etc/bash_completion ]; then
 fi
 
 # activate virtual environment if exist in current directory
-if [-f venv/bin/activate ]; then
+if [ -f venv/bin/activate ]; then
     source venv/bin/activate
 fi
