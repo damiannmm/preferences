@@ -27,6 +27,10 @@ alias pwd="__pwd"
 # Uses sublime text in background for man pages
 function __man()
 {
-    man "$@" | vipe > /dev/null &
+    if $([[ -f $(which vipe) ]]); then
+        man "$@" | vipe > /dev/null &
+    else
+        man "$@"
+    fi
 }
 alias man="__man"

@@ -72,6 +72,7 @@ xterm*|rxvt*)
     ;;
 esac
 
+# Use Powerline style prompt
 function _update_ps1() {
     PS1=$(powerline-shell $?)
 }
