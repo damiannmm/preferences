@@ -10,6 +10,7 @@
 │   │   │   └── config.yml <- ~/.config/fusuma/config.yml@
 │   │   └── powerline-shell
 │   │       └── config.json <- ~/.config/powerline-shell/config.json@
+│   ├── dircolors.ansi-light <- ~/.dircolors@
 │   ├── gitconfig <- ~/.gitconfig@
 │   ├── gitignore <- ~/.gitignore@
 │   ├── inputrc <- ~/.inputrc@
