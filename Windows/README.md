@@ -1,3 +1,3 @@
 # Windows
 
-Just don't use Windows lol.
+Use WSL.
