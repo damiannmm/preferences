@@ -55,4 +55,5 @@ fi
 # activate virtual environment if exist in current directory
 if [ -f venv/bin/activate ]; then
     source venv/bin/activate
+    echo "source $PWD/venv/bin/activate"
 fi
