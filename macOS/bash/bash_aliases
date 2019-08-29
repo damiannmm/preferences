@@ -43,3 +43,14 @@ function __man()
     man "$@" | col -b | subl -w &
 }
 alias man="__man"
+
+# Adds overused flags on common git functions
+function __git()
+{
+    if $([[ $@ == "log" ]]); then
+        git log --oneline
+    else
+        git "$@"
+    fi
+}
+alias git="__git"
