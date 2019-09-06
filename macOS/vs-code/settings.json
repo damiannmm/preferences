@@ -31,6 +31,14 @@
     "files.associations": {
         "code-stdin-*.txt": "diff"
     },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true
+    },
     "files.insertFinalNewline": false,
     "files.trimTrailingWhitespace": false,
     "indentRainbow.errorColor": "rgba(128,32,32,0.3)",
@@ -41,6 +49,10 @@
         "rgba(16,16,16,0.4)",
         "rgba(16,16,16,0.2)"
     ],
+    // "python.formatting.provider": "black",
+    // "python.linting.pylintEnabled": false,
+    // "python.linting.flake8Enabled": true,
+    // "python.linting.enabled": true,
     "python.pythonPath": "/usr/local/bin/python3",
     "python.terminal.activateEnvironment": false,
     "terminal.integrated.cursorBlinking": true,
@@ -53,9 +65,6 @@
     "workbench.settings.editor": "json",
     "zenMode.hideTabs": false,
     "zenMode.hideLineNumbers": false,
-    // "python.linting.flake8Args": [
-    //     "--max-line-length=100"
-    // ],
     "[html]": {
         "editor.formatOnSave": false
     },

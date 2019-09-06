@@ -2,7 +2,10 @@
 
 a.out
 *.pyc
+__pycache__/
 .ipynb_checkpoints
 
 .vscode/
 venv*/
+
+TODO
