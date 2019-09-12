@@ -15,22 +15,17 @@
     "diffEditor.renderSideBySide": false,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.colorDecorators": false,
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "FiraCode-Light",
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.rulers": [
-        80,
-        100
-    ],
+    "editor.rulers": [80, 100],
     "editor.scrollBeyondLastLine": false,
     "editor.showFoldingControls": "always",
     "editor.snippetSuggestions": "top",
-    "files.associations": {
-        "code-stdin-*.txt": "diff"
-    },
+    "files.associations": { "code-stdin-*.txt": "diff" },
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
@@ -49,14 +44,14 @@
         "rgba(16,16,16,0.4)",
         "rgba(16,16,16,0.2)"
     ],
-    // "python.formatting.provider": "black",
-    // "python.linting.pylintEnabled": false,
-    // "python.linting.flake8Enabled": true,
-    // "python.linting.enabled": true,
+    "python.linting.enabled": false,
     "python.pythonPath": "/usr/local/bin/python3",
-    "python.terminal.activateEnvironment": false,
+    "python.terminal.activateEnvironment": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.lineHeight": 1.1,
+    "vsicons.associations.folders": [
+        { "icon": "config", "extensions": ["conf"] }
+    ],
     "window.openFilesInNewWindow": "off",
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": false,
@@ -65,7 +60,7 @@
     "workbench.settings.editor": "json",
     "zenMode.hideTabs": false,
     "zenMode.hideLineNumbers": false,
-    "[html]": {
-        "editor.formatOnSave": false
-    },
+    "[html]": { "editor.formatOnSave": false },
+    "[json]": { "editor.formatOnSave": false },
+    "[jsonc]": { "editor.formatOnSave": false }
 }

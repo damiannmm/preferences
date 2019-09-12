@@ -51,9 +51,3 @@ fi
 if [ -f /usr/local/etc/bash_completion ]; then
     source /usr/local/etc/bash_completion
 fi
-
-# activate virtual environment if exist in current directory
-if [ -f venv/bin/activate ]; then
-    source venv/bin/activate
-    echo "source $PWD/venv/bin/activate"
-fi
