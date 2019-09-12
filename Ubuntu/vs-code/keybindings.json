@@ -4,8 +4,7 @@
     { "key": "ctrl+shift+tab", "command": "workbench.action.previousEditor" },
     { "key": "ctrl+t", "command": "workbench.action.files.newUntitledFile" },
     { "key": "ctrl+n", "command": "workbench.action.newWindow" },
-    // { "key": "cmd+b", "command": "code-runner.run" },
-    // { "key": "cmd+k cmd+z", "command": "workbench.action.toggleZenMode" },
+    { "key": "ctrl+k ctrl+z", "command": "workbench.action.toggleZenMode" },
     { "key": "alt+up", "command": "cursorUp", "when": "editorTextFocus" },
     { "key": "alt+shift+up", "command": "cursorUpSelect", "when": "editorTextFocus" },
     { "key": "alt+down", "command": "cursorDown", "when": "editorTextFocus" },
@@ -13,14 +12,5 @@
     { "key": "ctrl+;", "command": "extension.toggleSemicolon", "when": "editorTextFocus" },
     { "key": "ctrl+shift+;", "command": "extension.toggleColon", "when": "editorTextFocus" },
     { "key": "ctrl+,", "command": "extension.toggleComma", "when": "editorTextFocus" },
-    // { "key": "ctrl+c", "command": "code-runner.stop", "when": "editorTextFocus" },
-    { "key": "ctrl+0", "command": "workbench.action.zoomReset" },
-    // { 
-    //     "key": "cmd+k cmd+d",
-    //     "command": "runInTerminal.run",
-    //     "args": {
-    //         "cmd": "$(which git) diff HEAD | col -b | subl -w &",
-    //         "match": ".*"
-    //     }
-    // },
+    { "key": "ctrl+0", "command": "workbench.action.zoomReset" }
 ]
