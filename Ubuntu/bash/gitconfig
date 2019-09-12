@@ -1,11 +1,11 @@
 [user]
 	email = damiann.mm@gmail.com
-	name = Damiann Mangan
 [credential]
 	helper = store
 [push]
 	default = simple
 [core]
 	excludesfile = ~/.gitignore
+        ignorecase = true
 [status]
 	short = true
