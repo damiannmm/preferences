@@ -39,7 +39,7 @@ alias man="__man"
 function __git()
 {
     if $([[ $@ == "log" ]]); then
-        git log --oneline
+        git log --oneline --graph
     else
         git "$@"
     fi
