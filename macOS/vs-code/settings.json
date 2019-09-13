@@ -26,6 +26,8 @@
     "editor.showFoldingControls": "always",
     "editor.snippetSuggestions": "top",
     "files.associations": { "code-stdin-*.txt": "diff" },
+    "files.insertFinalNewline": false,
+    "files.trimTrailingWhitespace": false,
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
@@ -34,8 +36,12 @@
         "**/.DS_Store": true,
         "**/__pycache__": true
     },
-    "files.insertFinalNewline": false,
-    "files.trimTrailingWhitespace": false,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/venv/***": true
+    },
     "indentRainbow.errorColor": "rgba(128,32,32,0.3)",
     "indentRainbow.colors": [
         "rgba(16,16,16,0.1)",

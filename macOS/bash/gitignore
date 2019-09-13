@@ -1,11 +1,11 @@
 .DS_Store
 
 a.out
+
 *.pyc
 __pycache__/
-.ipynb_checkpoints
+venv/
 
 .vscode/
-venv*/
 
 TODO
