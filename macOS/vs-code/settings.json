@@ -1,14 +1,6 @@
 {
     "bracketPairColorizer.consecutivePairColors": [
-        "()",
-        "[]",
-        "{}",
-        [
-            "#ddd",
-            "#ddd",
-            "#ddd"
-        ],
-        "#ddd"
+        "()", "[]", "{}", ["#ddd","#ddd","#ddd"], "#ddd"
     ],
     "breadcrumbs.enabled": true,
     "color-highlight.markRuler": false,
