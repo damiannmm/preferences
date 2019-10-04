@@ -1,14 +1,6 @@
 {
     "bracketPairColorizer.consecutivePairColors": [
-        "()",
-        "[]",
-        "{}",
-        [
-            "#ddd",
-            "#ddd",
-            "#ddd"
-        ],
-        "#ddd"
+        "()", "[]", "{}", ["#ddd", "#ddd", "#ddd"], "#ddd"
     ],
     "breadcrumbs.enabled": true,
     "color-highlight.markRuler": false,
@@ -52,7 +44,6 @@
         { "icon": "config", "extensions": ["conf"] }
     ],
     "window.openFilesInNewWindow": "off",
-    "window.zoomLevel": 0.2,
     "workbench.activityBar.visible": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.iconTheme": "vscode-icons",
