@@ -21,5 +21,6 @@
 │   └── User <- "~/Library/Application Support/Sublime Text 3/Packages/User@"
 └── vs-code
     ├── keybindings.json <- "~/Library/Application Support/Code/User/keybindings.json@"
-    └── settings.json <- "~/Library/Application Support/Code/User/settings.json@"
+    ├── settings.json <- "~/Library/Application Support/Code/User/settings.json@"
+    └── sphinx.mustace
 ```
