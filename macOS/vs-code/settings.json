@@ -19,6 +19,7 @@
     "editor.scrollBeyondLastLine": false,
     "editor.showFoldingControls": "always",
     "editor.snippetSuggestions": "top",
+    "explorer.confirmDelete": false,
     "files.associations": { "code-stdin-*.txt": "diff" },
     "files.insertFinalNewline": false,
     "files.trimTrailingWhitespace": false,
@@ -46,11 +47,13 @@
     ],
     "python.linting.enabled": false,
     "python.pythonPath": "/usr/local/bin/python3",
-    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvironment": false,
     "python.workspaceSymbols.exclusionPatterns": [
         "**/site-packages/**",
         "venv/**"
     ],
+    "python.workspaceSymbols.rebuildOnFileSave": true,
+    "python.workspaceSymbols.rebuildOnStart": true,
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
@@ -71,8 +74,5 @@
     "zenMode.hideLineNumbers": false,
     "[html]": { "editor.formatOnSave": false },
     "[json]": { "editor.formatOnSave": false },
-    "[jsonc]": {
-        "editor.formatOnSave": false
-    },
-    "explorer.confirmDelete": false
+    "[jsonc]": { "editor.formatOnSave": false }
 }

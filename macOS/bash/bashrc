@@ -52,4 +52,4 @@ if [ -f /usr/local/etc/bash_completion ]; then
     source /usr/local/etc/bash_completion
 fi
 
-export PATH="$PATH:$PWD/Developer/arcanist/bin"
+export PATH="venv/bin:$PATH:~/Developer/arcanist/bin"

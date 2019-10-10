@@ -19,6 +19,16 @@ export FLASK_ENV=development
 
 alias ls='ls -FG'
 
+function update_terminal_cwd() {
+    # Identify the directory using a "file:" scheme URL,
+    # including the host name to disambiguate local vs.
+    # remote connections. Percent-escape spaces.
+    local SEARCH=' '
+    local REPLACE='%20'
+    local PWD_URL="file://$HOSTNAME${PWD//$SEARCH/$REPLACE}"
+    printf '\e]7;%s\a' "$PWD_URL"
+}
+
 # Always lists working directory while cd
 function __cd()
 {
@@ -51,6 +61,11 @@ function __git()
 {
     if $([[ $@ == "log" ]]); then
         git log --oneline --graph
+    elif $([[ $@ == "push" ]]); then
+        git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+    elif $([[ $@ == "branch-clean" ]]); then
+        git branch | grep -v "master" | xargs git branch -D
+        git fetch --all --prune
     else
         git "$@"
     fi
