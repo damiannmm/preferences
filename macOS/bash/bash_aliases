@@ -1,6 +1,28 @@
 #!/usr/bin/env bash
 
-# core variables
+# Setup PATH
+prepends=(
+    "venv/bin"
+)
+
+appends=(
+    "$HOME/.phacility/arcanist/bin"
+)
+
+for (( i=${#prepends[@]}-1; i>=0; i-- )); do
+    PATH="${prepends[i]}:$PATH"
+done
+
+for (( i=0; i<${#appends[@]}; i++ )); do
+    PATH="$PATH:${appends[i]}"
+done
+
+export PATH
+
+unset prepends
+unset appends
+
+# Core variables
 export EDITOR="subl -w"
 
 export LC_ALL=en_US.UTF-8
@@ -15,10 +37,7 @@ export LS_COLORS='ex=00:su=00:sg=00:ca=00:'
 
 export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
-export FLASK_ENV=development
-
-alias ls='ls -FG'
-
+# Define update terminal
 function update_terminal_cwd() {
     # Identify the directory using a "file:" scheme URL,
     # including the host name to disambiguate local vs.
@@ -28,6 +47,9 @@ function update_terminal_cwd() {
     local PWD_URL="file://$HOSTNAME${PWD//$SEARCH/$REPLACE}"
     printf '\e]7;%s\a' "$PWD_URL"
 }
+
+# Always list with slashes and colors
+alias ls='ls -FG'
 
 # Always lists working directory while cd
 function __cd()
@@ -63,9 +85,6 @@ function __git()
         git log --oneline --graph
     elif $([[ $@ == "push" ]]); then
         git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
-    elif $([[ $@ == "branch-clean" ]]); then
-        git branch | grep -v "master" | xargs git branch -D
-        git fetch --all --prune
     else
         git "$@"
     fi
