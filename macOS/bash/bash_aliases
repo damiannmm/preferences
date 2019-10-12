@@ -83,8 +83,6 @@ function __git()
 {
     if $([[ $@ == "log" ]]); then
         git log --oneline --graph
-    elif $([[ $@ == "push" ]]); then
-        git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     else
         git "$@"
     fi
