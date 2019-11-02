@@ -23,6 +23,7 @@ unset prepends
 unset appends
 
 # Core variables
+export BASH_SILENCE_DEPRECATION_WARNING=1
 export EDITOR="subl -w"
 
 export LC_ALL=en_US.UTF-8

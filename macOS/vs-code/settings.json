@@ -9,7 +9,7 @@
     "diffEditor.renderSideBySide": false,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.colorDecorators": false,
-    "editor.fontFamily": "FiraCode-Light",
+    "editor.fontFamily": "FiraCode-Retina",
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -61,6 +61,7 @@
     },
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.lineHeight": 1.1,
+    "terminal.integrated.shell.osx": "/bin/bash",
     "vsicons.associations.folders": [
         { "icon": "config", "extensions": ["conf"] }
     ],
@@ -74,5 +75,7 @@
     "zenMode.hideLineNumbers": false,
     "[html]": { "editor.formatOnSave": false },
     "[json]": { "editor.formatOnSave": false },
-    "[jsonc]": { "editor.formatOnSave": false }
+    "[jsonc]": {
+        "editor.formatOnSave": false
+    }
 }
