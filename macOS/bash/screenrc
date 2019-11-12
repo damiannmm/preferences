@@ -1,1 +1,13 @@
 startup_message off
+# start first terminal
+screen
+# split horizontally and vertically
+split
+split -v
+# start second terminal
+focus
+screen
+focus
+# start third terminal as htop
+screen htop
+focus
