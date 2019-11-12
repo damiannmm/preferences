@@ -14,6 +14,8 @@
 │   ├── gitignore <- ~/.gitignore@
 │   ├── inputrc <- ~/.inputrc@
 │   ├── octaverc <- ~/.octaverc@
+│   ├── tmux <- ~/.tmux@
+│   ├── tmux.conf <- ~/.tmux.conf@
 │   └── vimrc <- ~/.vimrc@
 ├── sublime-text
 │   ├── C++ <- "~/Library/Application Support/Sublime Text 3/Packages/C++@"
