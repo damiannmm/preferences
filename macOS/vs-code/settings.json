@@ -38,6 +38,10 @@
         "**/venv/***": true
     },
     "indentRainbow.errorColor": "rgba(128,32,32,0.3)",
+    "indentRainbow.excludedLanguages": [
+        "diff",
+        "plaintext"
+    ],
     "indentRainbow.colors": [
         "rgba(16,16,16,0.1)",
         "rgba(16,16,16,0.3)",
@@ -45,9 +49,11 @@
         "rgba(16,16,16,0.4)",
         "rgba(16,16,16,0.2)"
     ],
+    "python.jediEnabled": true,
     "python.linting.enabled": false,
     "python.pythonPath": "/usr/local/bin/python3",
     "python.terminal.activateEnvironment": false,
+    "python.workspaceSymbols.ctagsPath": "/usr/local/bin/ctags",
     "python.workspaceSymbols.exclusionPatterns": [
         "**/site-packages/**",
         "venv/**"
@@ -57,7 +63,8 @@
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
-        ".vscode/tags": true
+        "**/tags": true,
+        "**/venv": true
     },
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.lineHeight": 1.1,
@@ -75,7 +82,5 @@
     "zenMode.hideLineNumbers": false,
     "[html]": { "editor.formatOnSave": false },
     "[json]": { "editor.formatOnSave": false },
-    "[jsonc]": {
-        "editor.formatOnSave": false
-    }
+    "[jsonc]": { "editor.formatOnSave": false }
 }

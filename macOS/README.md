@@ -13,6 +13,10 @@
 │   ├── gitconfig <- ~/.gitconfig@
 │   ├── gitignore <- ~/.gitignore@
 │   ├── inputrc <- ~/.inputrc@
+│   ├── ipython
+│   │   └── profile_default
+│   │       └── startup
+│   │           └── 00-autoreload.py <- ~/.ipython/profile_default/startup/00-autoreload.py
 │   ├── octaverc <- ~/.octaverc@
 │   ├── tmux <- ~/.tmux@
 │   ├── tmux.conf <- ~/.tmux.conf@
