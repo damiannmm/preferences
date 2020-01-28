@@ -93,6 +93,12 @@ function __git()
         else
             git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(black)%s%C(reset) %C(dim black)- %an%C(reset)%C(bold red)%d%C(reset)' --all
         fi
+    elif $([[ $1 == "diff" ]]); then
+        if $([[ $TERM_PROGRAM == "vscode" ]]); then
+            git "$@" | code - &
+        else
+            git "$@" | subl -w &
+        fi
     else
         git "$@"
     fi
