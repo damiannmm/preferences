@@ -4,6 +4,7 @@
     "bracketPairColorizer.consecutivePairColors": [
         "()", "[]", "{}", ["#ddd","#ddd","#ddd"], "#ddd"
     ],
+    "bracketPairColorizer.showBracketsInGutter": true,
     "breadcrumbs.enabled": true,
     "color-highlight.markRuler": false,
     "diffEditor.renderSideBySide": false,
