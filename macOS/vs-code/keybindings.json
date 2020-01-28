@@ -18,6 +18,7 @@
         "command": "editor.action.insertLineAfter",
         "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
     },
+    { "key": "cmd+shift+g", "command": "workbench.action.tasks.runTask", "args": "git diff" },
     { "key": "cmd+;", "command": "extension.toggleSemicolon", "when": "editorTextFocus" },
     { "key": "cmd+shift+;", "command": "extension.toggleColon", "when": "editorTextFocus" },
     { "key": "cmd+,", "command": "extension.toggleComma", "when": "editorTextFocus" },
