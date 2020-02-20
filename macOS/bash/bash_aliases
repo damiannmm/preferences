@@ -103,4 +103,4 @@ function __git()
         git "$@"
     fi
 }
-alias git="__git"
+# alias git="__git"

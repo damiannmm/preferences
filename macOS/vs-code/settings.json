@@ -68,12 +68,11 @@
         "**/tags": true,
         "**/venv": true
     },
+    
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.lineHeight": 1.1,
-    "terminal.integrated.shell.osx": "/bin/bash",
-    "vsicons.associations.folders": [
-        { "icon": "config", "extensions": ["conf"] }
-    ],
+    "terminal.integrated.shell.osx": "/usr/local/bin/tmux",
+    "vsicons.associations.folders": [ { "icon": "config", "extensions": ["conf"] } ],
     "window.openFilesInNewWindow": "off",
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": false,
