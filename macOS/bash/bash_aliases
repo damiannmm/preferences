@@ -104,3 +104,12 @@ function __git()
     fi
 }
 # alias git="__git"
+
+# Adds overused docker routine
+function idocker()
+{
+    docker build -t "$1" .
+    container_id=$(docker run -dit -p 8000:8000 --env-file "$2" "$1")
+    docker exec -it "$container_id" bash
+    docker kill "$container_id"
+}

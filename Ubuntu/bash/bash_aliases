@@ -32,6 +32,9 @@ export EDITOR="subl -w"
 # Use "open" to open
 alias open="xdg-open"
 
+# Additional ls alias
+alias ll='ls -alF --block-size=M'
+
 # Always lists working directory while cd
 function __cd()
 {
