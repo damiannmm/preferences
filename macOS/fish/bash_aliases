@@ -1,0 +1,115 @@
+# #!/usr/bin/env bash
+
+# # Setup PATH
+# prepends=(
+#     "venv/bin"
+#     "/usr/local/opt/mysql-client/bin"
+# )
+
+# appends=(
+#     "$HOME/.phacility/arcanist/bin"
+# )
+
+# for (( i=${#prepends[@]}-1; i>=0; i-- )); do
+#     PATH="${prepends[i]}:$PATH"
+# done
+
+# for (( i=0; i<${#appends[@]}; i++ )); do
+#     PATH="$PATH:${appends[i]}"
+# done
+
+# export PATH
+
+# unset prepends
+# unset appends
+
+# # Core variables
+# export BASH_SILENCE_DEPRECATION_WARNING=1
+# export EDITOR="subl -w"
+
+# export LC_ALL=en_US.UTF-8
+# export LANG=en_US.UTF-8
+
+# export HISTDUP="prev"
+# export HISTSIZE=20000
+# export HISTFILESIZE=10000
+# export HISTIGNORE="ls:* --help"
+
+# export LDFLAGS="-L/usr/local/opt/mysql-client/lib"
+# export CPPFLAGS="-I/usr/local/opt/mysql-client/include"
+# export LIBRARY_PATH="/usr/local/opt/openssl/lib/:$LIBRARY_PATH"
+
+# export LS_COLORS='ex=00:su=00:sg=00:ca=00:'
+
+# export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+
+# # Define update terminal
+# function update_terminal_cwd() {
+#     # Identify the directory using a "file:" scheme URL,
+#     # including the host name to disambiguate local vs.
+#     # remote connections. Percent-escape spaces.
+#     local SEARCH=' '
+#     local REPLACE='%20'
+#     local PWD_URL="file://$HOSTNAME${PWD//$SEARCH/$REPLACE}"
+#     printf '\e]7;%s\a' "$PWD_URL"
+# }
+
+# # Always list with slashes and colors
+# alias ls='ls -FG'
+
+# # Always lists working directory while cd
+# function __cd()
+# {
+#     cd -L "$@"
+#     if $([[ $(ls | wc -l) -le 20 ]]); then
+#         ls
+#     fi
+# }
+# alias cd="__cd"
+
+# # Print both symbolic and physical working directory
+# function __pwd()
+# {
+#     pwd
+#     if $([[ "$(\pwd)" != "$(\pwd -P)" ]]); then
+#         pwd -P
+#     fi
+# }
+# alias pwd="__pwd"
+
+# # Uses sublime text in background for man pages
+# function __man()
+# {
+#     man "$@" | col -b | subl -w &
+# }
+# alias man="__man"
+
+# # Adds overused flags on common git functions
+# function __git()
+# {
+#     if $([[ $@ == "log" ]]); then
+#         if $([[ $TERM_PROGRAM == "vscode" ]]); then
+#             git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+#         else
+#             git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(black)%s%C(reset) %C(dim black)- %an%C(reset)%C(bold red)%d%C(reset)' --all
+#         fi
+#     elif $([[ $1 == "diff" ]]); then
+#         if $([[ $TERM_PROGRAM == "vscode" ]]); then
+#             git "$@" | code - &
+#         else
+#             git "$@" | subl -w &
+#         fi
+#     else
+#         git "$@"
+#     fi
+# }
+# # alias git="__git"
+
+# # Adds overused docker routine
+# function idocker()
+# {
+#     docker build -t "$1" .
+#     container_id=$(docker run -dit -p 8000:8000 --env-file "$2" "$1")
+#     docker exec -it "$container_id" bash
+#     docker kill "$container_id"
+# }
