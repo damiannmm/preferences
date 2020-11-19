@@ -54,6 +54,7 @@
 	],
 	"scroll_past_end": false,
 	"show_definitions": false,
+	"show_minimap": false,
 	"show_panel_on_build": false,
 	"status_bar_brighter": true,
 	"tabs_small": true,
