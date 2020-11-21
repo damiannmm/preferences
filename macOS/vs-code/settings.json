@@ -56,7 +56,7 @@
     ],
     "python.languageServer": "Jedi",
     "python.linting.enabled": false,
-    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "python.pythonPath": "/usr/local/bin/python3",
     "python.terminal.activateEnvironment": false,
     "python.workspaceSymbols.ctagsPath": "/usr/local/bin/ctags",
     "python.workspaceSymbols.exclusionPatterns": [
@@ -71,7 +71,6 @@
         "**/venv": true
     },
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.lineHeight": 1.1,
     "terminal.integrated.macOptionClickForcesSelection": true,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     "vsicons.associations.folders": [ { "icon": "config", "extensions": ["conf"] } ],
