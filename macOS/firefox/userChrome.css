@@ -1,0 +1,13 @@
+/* Dark new tab */
+#browser vbox#appcontent tabbrowser, #content, #tabbrowser-tabpanels, 
+browser[type=content-primary], browser[type=content] > html {
+    background: #1D1B19 !important
+}
+
+/* Top findbar */
+.browserContainer > findbar {
+  -moz-box-ordinal-group: 0;
+  position: fixed; !important;
+  right: 1em;
+  border: 2px solid threeddarkshadow !important;
+}
