@@ -11,22 +11,21 @@ browser[type=content] > html {
 .browserContainer > findbar {
   -moz-box-ordinal-group: 0;
   position: fixed !important;
-  right: 2em;
   animation: 0.2s scale-in;
   background: var(--toolbar-bgcolor) !important;
   border-top-width: 0 !important;
-  border: 1px solid var(--toolbox-border-bottom-color) !important;
   border-bottom: 1px solid threeddarkshadow !important;
   padding-right: 2em;
+  direction: rtl !important;
+  margin-bottom: -3em !important;
+  z-index: 2147483647 !important;
+}
+
+.browserContainer > findbar .findbar-closebutton {
   direction: rtl !important;
 }
 
 .browserContainer > findbar .found-matches,
 .browserContainer > findbar .findbar-textbox {
   direction: ltr !important
-}
-
-/* .browserContainer > findbar .findbar-container, */
-.browserContainer > findbar .findbar-closebutton {
-  direction: rtl !important;
 }
