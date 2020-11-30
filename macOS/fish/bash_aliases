@@ -24,12 +24,6 @@
 # unset appends
 
 # # Core variables
-# export BASH_SILENCE_DEPRECATION_WARNING=1
-# export EDITOR="subl -w"
-
-# export LC_ALL=en_US.UTF-8
-# export LANG=en_US.UTF-8
-
 # export HISTDUP="prev"
 # export HISTSIZE=20000
 # export HISTFILESIZE=10000
@@ -38,8 +32,6 @@
 # export LDFLAGS="-L/usr/local/opt/mysql-client/lib"
 # export CPPFLAGS="-I/usr/local/opt/mysql-client/include"
 # export LIBRARY_PATH="/usr/local/opt/openssl/lib/:$LIBRARY_PATH"
-
-# export LS_COLORS='ex=00:su=00:sg=00:ca=00:'
 
 # export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
@@ -53,27 +45,6 @@
 #     local PWD_URL="file://$HOSTNAME${PWD//$SEARCH/$REPLACE}"
 #     printf '\e]7;%s\a' "$PWD_URL"
 # }
-
-# # Adds overused flags on common git functions
-# function __git()
-# {
-#     if $([[ $@ == "log" ]]); then
-#         if $([[ $TERM_PROGRAM == "vscode" ]]); then
-#             git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-#         else
-#             git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(black)%s%C(reset) %C(dim black)- %an%C(reset)%C(bold red)%d%C(reset)' --all
-#         fi
-#     elif $([[ $1 == "diff" ]]); then
-#         if $([[ $TERM_PROGRAM == "vscode" ]]); then
-#             git "$@" | code - &
-#         else
-#             git "$@" | subl -w &
-#         fi
-#     else
-#         git "$@"
-#     fi
-# }
-# # alias git="__git"
 
 # # Adds overused docker routine
 # function idocker()
