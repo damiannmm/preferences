@@ -45,11 +45,7 @@ function __git
     if [ "$argv" = "log" ]
         /usr/local/bin/git $argv --all --decorate --oneline --graph
     else if [ "$argv[1]" = "diff" ]
-        if [ "$TERM_PROGRAM" = "vscode" ]
-            /usr/local/bin/git $argv --word-diff | subl -w &
-        else
-            /usr/local/bin/git $argv --word-diff | subl -w &
-        end
+        /usr/local/bin/git $argv --word-diff | subl -w &
     else
         /usr/local/bin/git $argv
     end
