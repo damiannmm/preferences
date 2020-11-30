@@ -9,11 +9,9 @@ set -x LC_ALL 'en_US.UTF-8'
 set -x LANG 'en_US.UTF-8'
 
 
-# aliases
-alias la='ls -A'
+# aliases and functions
+alias la 'ls -A'
 
-
-# functions
 function __cd
     set tmpdir $dirprev
     set -g dirprev (pwd)
@@ -45,9 +43,14 @@ function __git
     if [ "$argv" = "log" ]
         /usr/local/bin/git $argv --all --decorate --oneline --graph
     else if [ "$argv[1]" = "diff" ]
-        /usr/local/bin/git $argv --word-diff | subl -w &
+        /usr/local/bin/git $argv | subl -w &
     else
         /usr/local/bin/git $argv
     end
 end
 alias git '__git'
+
+
+# bindings
+bind ! __history_previous_command
+bind '$' __history_previous_command_arguments
