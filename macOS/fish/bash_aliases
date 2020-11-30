@@ -54,36 +54,6 @@
 #     printf '\e]7;%s\a' "$PWD_URL"
 # }
 
-# # Always list with slashes and colors
-# alias ls='ls -FG'
-
-# # Always lists working directory while cd
-# function __cd()
-# {
-#     cd -L "$@"
-#     if $([[ $(ls | wc -l) -le 20 ]]); then
-#         ls
-#     fi
-# }
-# alias cd="__cd"
-
-# # Print both symbolic and physical working directory
-# function __pwd()
-# {
-#     pwd
-#     if $([[ "$(\pwd)" != "$(\pwd -P)" ]]); then
-#         pwd -P
-#     fi
-# }
-# alias pwd="__pwd"
-
-# # Uses sublime text in background for man pages
-# function __man()
-# {
-#     man "$@" | col -b | subl -w &
-# }
-# alias man="__man"
-
 # # Adds overused flags on common git functions
 # function __git()
 # {
