@@ -10,7 +10,6 @@
     { "key": "alt+shift+up", "command": "cursorUpSelect", "when": "editorTextFocus" },
     { "key": "alt+down", "command": "cursorDown", "when": "editorTextFocus" },
     { "key": "alt+shift+down", "command": "cursorDownSelect", "when": "editorTextFocus" },
-    { "key": "ctrl+shift+`", "command": "workbench.action.toggleMaximizedPanel", "when": "terminalFocus" },
     { "key": "ctrl+cmd+g", "command": "editor.action.changeAll", "when": "editorTextFocus && !editorReadonly" },
     { "key": "shift+cmd+l", "command": "editor.action.insertCursorAtEndOfEachLineSelected", "when": "editorTextFocus" },
     {

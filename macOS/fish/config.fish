@@ -10,6 +10,7 @@ set -x LANG 'en_US.UTF-8'
 
 
 # aliases and functions
+alias ll 'ls -hlAF'
 alias la 'ls -A'
 
 function __cd
@@ -42,8 +43,6 @@ alias man '__man'
 function __git
     if [ "$argv" = "log" ]
         /usr/local/bin/git $argv --all --decorate --oneline --graph
-    else if [ "$argv[1]" = "diff" ]
-        /usr/local/bin/git $argv | subl -w &
     else
         /usr/local/bin/git $argv
     end
