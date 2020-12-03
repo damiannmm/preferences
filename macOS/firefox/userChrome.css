@@ -30,3 +30,7 @@ browser[type=content] > html {
 hbox[anonid=findbar-textbox-wrapper] {
   direction: ltr !important;
 }
+
+.browserContainer > findbar .findbar-highlight {
+  margin-right: 1em !important;
+}
