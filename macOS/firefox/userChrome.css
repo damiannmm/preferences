@@ -16,8 +16,8 @@ browser[type=content] > html {
   border-top-width: 0 !important;
   border-bottom: 1px solid threeddarkshadow !important;
   padding-right: 2em;
-  direction: rtl !important;
   margin-bottom: -3em !important;
+  direction: rtl !important;
   z-index: 2147483647 !important;
 }
 
@@ -26,6 +26,7 @@ browser[type=content] > html {
 }
 
 .browserContainer > findbar .found-matches,
-.browserContainer > findbar .findbar-textbox {
-  direction: ltr !important
+.browserContainer > findbar .findbar-textbox,
+hbox[anonid=findbar-textbox-wrapper] {
+  direction: ltr !important;
 }
