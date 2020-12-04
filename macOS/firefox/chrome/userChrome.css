@@ -1,4 +1,4 @@
-/* Dark new tab */
+/* New tab - dark */
 #browser vbox#appcontent tabbrowser,
 #content,
 #tabbrowser-tabpanels,
@@ -7,7 +7,7 @@ browser[type=content] > html {
     background: #1D1B19 !important
 }
 
-/* Top findbar */
+/* Findbar - top */
 .browserContainer > findbar {
   -moz-box-ordinal-group: 0;
   position: fixed !important;
@@ -16,17 +16,12 @@ browser[type=content] > html {
   border-top-width: 0 !important;
   border-bottom: 1px solid threeddarkshadow !important;
   padding-right: 2em;
-  margin-bottom: -3em !important;
+  /*margin-bottom: -3em !important;*/
   direction: rtl !important;
   z-index: 2147483647 !important;
 }
 
-.browserContainer > findbar .findbar-closebutton {
-  direction: rtl !important;
-}
-
 .browserContainer > findbar .found-matches,
-.browserContainer > findbar .findbar-textbox,
 hbox[anonid=findbar-textbox-wrapper] {
   direction: ltr !important;
 }
