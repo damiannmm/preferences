@@ -53,3 +53,7 @@ alias git '__git'
 # bindings
 bind ! __history_previous_command
 bind '$' __history_previous_command_arguments
+
+
+# iterm2 integration
+# test -e /Users/damiann/.iterm2_shell_integration.fish ; and source /Users/damiann/.iterm2_shell_integration.fish ; or true
