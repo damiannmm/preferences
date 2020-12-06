@@ -10,8 +10,10 @@ set -x LANG 'en_US.UTF-8'
 
 
 # aliases and functions
-alias ll 'ls -hlAF'
+alias ll 'ls -hloAF'
 alias la 'ls -A'
+
+alias vim 'nvim'
 
 function __cd
     set tmpdir $dirprev

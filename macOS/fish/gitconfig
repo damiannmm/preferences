@@ -6,12 +6,14 @@
 	excludesfile = ~/.gitignore
 	ignorecase = true
 	pager = diff-so-fancy | less --tabs=4 -RFX
-[diff]
-	compactionHeuristic = true
-[status]
-	short = true
+[pull]
+	rebase = false
 [push]
 	default = simple
+[status]
+	short = true
+[diff]
+	compactionHeuristic = true
 [color]
 	ui = true
 [color "diff-highlight"]
