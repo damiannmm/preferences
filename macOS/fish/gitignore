@@ -1,11 +1,6 @@
 .DS_Store
 
-a.out
-*.pyc
-__pycache__/
-
-venv/
-
+.sublime-workspace
 .vscode/
 
-TODO
+.ignore/

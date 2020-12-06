@@ -2,16 +2,16 @@
 	email = damiann.mm@gmail.com
 [credential]
 	helper = store
-[push]
-	default = simple
 [core]
 	excludesfile = ~/.gitignore
 	ignorecase = true
 	pager = diff-so-fancy | less --tabs=4 -RFX
-[status]
-	short = true
 [diff]
 	compactionHeuristic = true
+[status]
+	short = true
+[push]
+	default = simple
 [color]
 	ui = true
 [color "diff-highlight"]
