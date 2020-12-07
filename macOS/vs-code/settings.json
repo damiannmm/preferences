@@ -23,6 +23,7 @@
     "editor.showFoldingControls": "always",
     "editor.snippetSuggestions": "top",
     "editor.padding.bottom": 250,
+    "emmet.includeLanguages": { "javascript": "javascriptreact" },
     "explorer.confirmDelete": false,
     "files.associations": { "code-stdin-*.txt": "diff" },
     "files.insertFinalNewline": false,
