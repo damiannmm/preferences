@@ -1,25 +1,26 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     { "key": "ctrl+tab", "command": "workbench.action.nextEditor" },
-    { "key": "ctrl+shift+tab", "command": "workbench.action.previousEditor" },
+    { "key": "shift+ctrl+tab", "command": "workbench.action.previousEditor" },
     { "key": "cmd+t", "command": "workbench.action.files.newUntitledFile" },
     { "key": "cmd+n", "command": "workbench.action.newWindow" },
     { "key": "cmd+alt+p", "command": "workbench.action.showAllSymbols" },
     { "key": "cmd+k cmd+z", "command": "workbench.action.toggleZenMode" },
     { "key": "alt+up", "command": "cursorUp", "when": "editorTextFocus" },
-    { "key": "alt+shift+up", "command": "cursorUpSelect", "when": "editorTextFocus" },
+    { "key": "shift+alt+up", "command": "cursorUpSelect", "when": "editorTextFocus" },
     { "key": "alt+down", "command": "cursorDown", "when": "editorTextFocus" },
-    { "key": "alt+shift+down", "command": "cursorDownSelect", "when": "editorTextFocus" },
+    { "key": "shift+alt+down", "command": "cursorDownSelect", "when": "editorTextFocus" },
     { "key": "cmd+ctrl+g", "command": "editor.action.changeAll", "when": "editorTextFocus && !editorReadonly" },
-    { "key": "cmd+shift+l", "command": "editor.action.insertCursorAtEndOfEachLineSelected", "when": "editorTextFocus" },
-    {
-        "key": "shift+enter",
-        "command": "editor.action.insertLineAfter",
-        "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
-    },
-    { "key": "cmd+shift+g", "command": "workbench.action.tasks.runTask", "args": "git diff" },
+    { "key": "shift+cmd+l", "command": "editor.action.insertCursorAtEndOfEachLineSelected", "when": "editorTextFocus" },
+    { "key": "shift+cmd+g", "command": "workbench.action.tasks.runTask", "args": "git diff" },
     { "key": "cmd+;", "command": "extension.toggleSemicolon", "when": "editorTextFocus" },
-    { "key": "cmd+shift+;", "command": "extension.toggleColon", "when": "editorTextFocus" },
+    { "key": "shift+cmd+;", "command": "extension.toggleColon", "when": "editorTextFocus" },
     { "key": "cmd+,", "command": "extension.toggleComma", "when": "editorTextFocus" },
-    { "key": "cmd+0", "command": "workbench.action.zoomReset" }
+    { "key": "cmd+0", "command": "workbench.action.zoomReset" },
+    {
+        "key": "shift+,",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "<${1:${TM_SELECTED_TEXT}}>" },
+        "when": "editorHasSelection"
+    }
 ]
