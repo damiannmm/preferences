@@ -87,8 +87,5 @@
     "zenMode.hideLineNumbers": false,
     "[html]": { "editor.formatOnSave": false },
     "[json]": { "editor.formatOnSave": false },
-    "[jsonc]": {
-        "editor.formatOnSave": false
-    },
-    "workbench.editor.showTabs": true
+    "[jsonc]": { "editor.formatOnSave": false }
 }

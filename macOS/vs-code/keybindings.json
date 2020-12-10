@@ -17,6 +17,7 @@
     { "key": "shift+cmd+;", "command": "extension.toggleColon", "when": "editorTextFocus" },
     { "key": "cmd+,", "command": "extension.toggleComma", "when": "editorTextFocus" },
     { "key": "cmd+0", "command": "workbench.action.zoomReset" },
+    { "key": "cmd+alt+`", "command": "workbench.action.terminal.focusNext" },
     {
         "key": "shift+,",
         "command": "editor.action.insertSnippet",

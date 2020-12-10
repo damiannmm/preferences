@@ -4,7 +4,7 @@
 #tabbrowser-tabpanels,
 browser[type=content-primary],
 browser[type=content] > html {
-    background: #1D1B19 !important
+    background: #2A2A2E !important
 }
 
 /* Findbar - top */
