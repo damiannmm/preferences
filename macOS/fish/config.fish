@@ -1,8 +1,7 @@
 # variables
-set tide_prompt_char_icon '$'
+set tide_prompt_char_icon ' $ ❯'
 set tide_pwd_truncate_margin 1024
 
-set -x BASH_SILENCE_DEPRECATION_WARNING 1
 set -x EDITOR 'subl -w'
 
 set -x LC_ALL 'en_US.UTF-8'
@@ -13,6 +12,7 @@ set -x LANG 'en_US.UTF-8'
 alias ll 'ls -hloAF'
 alias la 'ls -A'
 
+alias vi 'nvim'
 alias vim 'nvim'
 
 function __cd
@@ -44,9 +44,9 @@ alias man '__man'
 
 function __git
     if [ "$argv" = "log" ]
-        /usr/local/bin/git $argv --all --decorate --oneline --graph
+        /usr/local/bin/hub $argv --all --decorate --oneline --graph
     else
-        /usr/local/bin/git $argv
+        /usr/local/bin/hub $argv
     end
 end
 alias git '__git'
