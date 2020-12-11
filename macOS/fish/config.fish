@@ -1,6 +1,6 @@
 # variables
 set tide_prompt_char_icon '$'
-set tide_pwd_truncate_margin 32
+set tide_pwd_truncate_margin 1024
 
 set -x BASH_SILENCE_DEPRECATION_WARNING 1
 set -x EDITOR 'subl -w'
