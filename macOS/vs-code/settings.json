@@ -10,7 +10,7 @@
     "diffEditor.renderSideBySide": true,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.colorDecorators": false,
-    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.fontFamily": "'FiraCode Nerd Font', 'Fira Code'",
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
