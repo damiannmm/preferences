@@ -1,4 +1,7 @@
 {
+    "[html]": { "editor.formatOnSave": false },
+    "[json]": { "editor.formatOnSave": false },
+    "[jsonc]": { "editor.formatOnSave": false },
     "autoDocstring.customTemplatePath":
         "/Users/damiann/Developer/preferences/macOS/vs-code/sphinx.mustache",
     "bracketPairColorizer.consecutivePairColors": [
@@ -76,6 +79,8 @@
         "**/tags": true,
         "**/yarn.lock": true
     },
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.macOptionClickForcesSelection": true,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
@@ -85,11 +90,9 @@
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.showTabs": true,
     "workbench.iconTheme": "vscode-icons",
     "workbench.settings.editor": "json",
     "zenMode.hideTabs": false,
-    "zenMode.hideLineNumbers": false,
-    "[html]": { "editor.formatOnSave": false },
-    "[json]": { "editor.formatOnSave": false },
-    "[jsonc]": { "editor.formatOnSave": false }
+    "zenMode.hideLineNumbers": false
 }

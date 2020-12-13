@@ -1,5 +1,14 @@
 # variables
-set tide_prompt_char_icon ' $ ❯'
+function __prompt_icon
+    set bg_col $argv
+    set_color -b $bg_col
+    echo -n ' $ '
+    set_color $bg_col -b normal
+    echo -n ''
+    set_color normal
+end
+set tide_prompt_char_icon (__prompt_icon black)
+
 set tide_pwd_truncate_margin 1024
 
 set -x EDITOR 'subl -w'
