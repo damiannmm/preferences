@@ -16,9 +16,7 @@ browser[type=content] > html {
   border-top-width: 0 !important;
   border-bottom: 1px solid threeddarkshadow !important;
   padding-right: 2em;
-  /*margin-bottom: -3em !important;*/
   direction: rtl !important;
-  z-index: 2147483647 !important;
 }
 
 .browserContainer > findbar .found-matches,

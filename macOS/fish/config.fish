@@ -1,3 +1,15 @@
+# setup PATH
+set __prepend_path foo_1
+set -a __prepend_path bar_1
+
+set __append_path foo_1
+set -a __append_path bar_1
+
+set PATH $__prepend_path $PATH $__append_path
+
+set -e __prepend_path
+set -e __append_path
+
 # variables
 function __prompt_icon
     set bg_col $argv
