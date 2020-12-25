@@ -2,8 +2,8 @@
 set __prepend_path foo_1
 set -a __prepend_path bar_1
 
-set __append_path foo_1
-set -a __append_path bar_1
+set __append_path foo_2
+set -a __append_path bar_2
 
 set PATH $__prepend_path $PATH $__append_path
 
