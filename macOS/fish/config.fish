@@ -1,6 +1,8 @@
 # setup PATH
-set __prepend_path foo_1
-set -a __prepend_path bar_1
+set __prepend_path ~/.local/share/gem/ruby/3.0.0/bin
+set -a __prepend_path /usr/local/opt/ruby/bin
+# set -a __prepend_path foo_1
+# set -a __prepend_path bar_1
 
 set __append_path foo_2
 set -a __append_path bar_2

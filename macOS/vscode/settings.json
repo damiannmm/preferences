@@ -2,6 +2,7 @@
     "[html]": { "editor.formatOnSave": false },
     "[json]": { "editor.formatOnSave": false },
     "[jsonc]": { "editor.formatOnSave": false },
+    "[markdown]": { "editor.quickSuggestions": true },
     "autoDocstring.customTemplatePath":
         "/Users/damiann/Developer/preferences/macOS/vs-code/sphinx.mustache",
     "bracketPairColorizer.consecutivePairColors": [
@@ -26,6 +27,7 @@
     "editor.showFoldingControls": "always",
     "editor.snippetSuggestions": "top",
     "editor.padding.bottom": 256,
+    "editor.wordWrap": "on",
     "editor.wrappingIndent": "deepIndent",
     "emmet.includeLanguages": { "javascript": "javascriptreact" },
     "explorer.confirmDelete": false,
@@ -40,7 +42,8 @@
         "**/.DS_Store": true,
         "**/.gitkeep": true,  // additional
         "**/__pycache__": true,
-        "**/code-stdin**.txt": true
+        // "**/_site": true,
+        "**/code-stdin**.txt": true,
     },
     "files.watcherExclude": {
         "**/.git/objects/**": true,
@@ -80,17 +83,21 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.defaultProfile.osx": "fish",
     "terminal.integrated.macOptionClickForcesSelection": true,
-    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    // "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "terminal.integrated.profiles.osx": {
+        "fish": { "path": "/usr/local/bin/fish" }
+    },
     "terminal.integrated.showExitAlert": false,
     "vsicons.associations.folders": [ { "icon": "config", "extensions": ["conf"] } ],
     "window.openFilesInNewWindow": "off",
-    "window.zoomLevel": 0,
-    "workbench.activityBar.visible": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.showTabs": true,
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.settings.editor": "json",
+    "workbench.sideBar.location": "right",
+    "zenMode.fullScreen": false,
     "zenMode.hideTabs": false,
     "zenMode.hideLineNumbers": false
 }

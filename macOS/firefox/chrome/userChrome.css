@@ -27,3 +27,8 @@ hbox[anonid=findbar-textbox-wrapper] {
 .browserContainer > findbar .findbar-highlight {
   margin-right: 1em !important;
 }
+
+/* Private browsing tab background - purple  */
+#main-window[privatebrowsingmode="temporary"] #navigator-toolbox {
+   background-color: #CBC3E3 !important;
+}

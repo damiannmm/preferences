@@ -41,5 +41,7 @@
     --newtab-card-shadow: 0 1px 8px 0 rgba(12, 12, 13, 0.2) !important;
     --newtab-snippets-background-color: #38383D !important;
     --newtab-snippets-hairline-color: rgba(255, 255, 255, 0.1) !important;
+    --newtab-wordmark-color: #FFFFFF !important;
+    --newtab-search-text-color: rgba(249, 249, 250, 1) !important;
   }
 }

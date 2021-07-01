@@ -8,6 +8,7 @@
 		"All Autocomplete",
 		"Anaconda",
 		"BracketHighlighter",
+		"Buildview",
 		"C++11",
 		"DocBlockr",
 		"DocPy",
@@ -23,9 +24,8 @@
 		"rainbow_csv",
 		"rsub",
 		"SideBarEnhancements",
-		"sublime-text-2-buildview",
 		"SyncedSideBar",
 		"Terminal",
-		"Theme - Afterglow"
-	]
+		"Theme - Afterglow",
+	],
 }

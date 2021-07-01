@@ -37,14 +37,14 @@
 		".*",
 		"_site"
 	],
-	"font_face": "Fira Code",
+	"font_face": "FiraCode Nerd Font",
 	"font_size": 12,
 	"highlight_line": true,
 	"ignore_vcs_packages": true,
 	"ignored_packages":
 	[
 		"Markdown",
-		"Vintage"
+		"Vintage",
 	],
 	"line_numbers": true,
 	"open_files_in_new_window": false,
@@ -62,5 +62,5 @@
 	"theme": "Afterglow.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": false,
-	"word_wrap": false
+	"word_wrap": false,
 }
