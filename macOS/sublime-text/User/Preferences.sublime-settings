@@ -53,7 +53,7 @@
 		80,
 		100
 	],
-	"scroll_past_end": false,
+	"scroll_past_end": true,
 	"show_definitions": false,
 	"show_minimap": false,
 	"show_panel_on_build": false,
@@ -62,5 +62,4 @@
 	"theme": "Afterglow.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": false,
-	"word_wrap": false,
 }

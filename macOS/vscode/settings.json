@@ -27,7 +27,6 @@
     "editor.showFoldingControls": "always",
     "editor.snippetSuggestions": "top",
     "editor.padding.bottom": 256,
-    "editor.wordWrap": "on",
     "editor.wrappingIndent": "deepIndent",
     "emmet.includeLanguages": { "javascript": "javascriptreact" },
     "explorer.confirmDelete": false,
@@ -99,5 +98,12 @@
     "workbench.sideBar.location": "right",
     "zenMode.fullScreen": false,
     "zenMode.hideTabs": false,
-    "zenMode.hideLineNumbers": false
+    "zenMode.hideLineNumbers": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    }
 }

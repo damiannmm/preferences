@@ -78,6 +78,8 @@ alias git '__git'
 # bindings
 bind ! __history_previous_command
 bind '$' __history_previous_command_arguments
+bind -k nul complete
+bind \t accept-autosuggestion
 
 
 # iterm2 integration
