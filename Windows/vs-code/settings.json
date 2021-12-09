@@ -33,6 +33,7 @@
     "files.associations": { "code-stdin-*.txt": "diff" },
     "files.insertFinalNewline": false,
     "files.trimTrailingWhitespace": false,
+    "files.eol": "\n",
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
