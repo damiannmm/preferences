@@ -5,6 +5,7 @@
 	"close_windows_when_empty": true,
 	"color_scheme": "Packages/Theme - Afterglow/Afterglow.tmTheme",
 	"default_font_size": 11,
+	"default_line_ending": "unix",
 	"draw_centered": false,
 	"draw_minimap_border": true,
 	"ensure_newline_at_eof_on_save": false,
