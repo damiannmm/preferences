@@ -1,0 +1,50 @@
+// Place your key bindings in this file to override the defaults
+[
+    { "key": "ctrl+tab", "command": "workbench.action.nextEditor" },
+    { "key": "shift+ctrl+tab", "command": "workbench.action.previousEditor" },
+	{ "key": "ctrl+t", "command": "workbench.action.files.newUntitledFile" },
+    { "key": "ctrl+n", "command": "workbench.action.newWindow" },
+    { "key": "ctrl+alt+p", "command": "workbench.action.showAllSymbols" },
+    { "key": "ctrl+k ctrl+z", "command": "workbench.action.toggleZenMode" },
+    { "key": "alt+up", "command": "cursorUp", "when": "editorTextFocus" },
+    { "key": "shift+alt+up", "command": "cursorUpSelect", "when": "editorTextFocus" },
+    { "key": "alt+down", "command": "cursorDown", "when": "editorTextFocus" },
+    { "key": "shift+alt+down", "command": "cursorDownSelect", "when": "editorTextFocus" },
+    { "key": "ctrl+alt+g", "command": "editor.action.changeAll", "when": "editorTextFocus && !editorReadonly" },
+    { "key": "shift+ctrl+l", "command": "editor.action.insertCursorAtEndOfEachLineSelected", "when": "editorTextFocus" },
+    { "key": "shift+ctrl+g", "command": "workbench.action.tasks.runTask", "args": "git diff" },
+    { "key": "ctrl+;", "command": "extension.toggleSemicolon", "when": "editorTextFocus" },
+    { "key": "shift+ctrl+;", "command": "extension.toggleColon", "when": "editorTextFocus" },
+    { "key": "ctrl+,", "command": "extension.toggleComma", "when": "editorTextFocus" },
+    { "key": "ctrl+0", "command": "workbench.action.zoomReset" },
+    { "key": "ctrl+1", "command": "workbench.action.openEditorAtIndex1" },
+    { "key": "ctrl+2", "command": "workbench.action.openEditorAtIndex2" },
+    { "key": "ctrl+3", "command": "workbench.action.openEditorAtIndex3" },
+    { "key": "ctrl+4", "command": "workbench.action.openEditorAtIndex4" },
+    { "key": "ctrl+5", "command": "workbench.action.openEditorAtIndex5" },
+    { "key": "ctrl+6", "command": "workbench.action.openEditorAtIndex6" },
+    { "key": "ctrl+7", "command": "workbench.action.openEditorAtIndex7" },
+    { "key": "ctrl+8", "command": "workbench.action.openEditorAtIndex8" },
+    { "key": "ctrl+9", "command": "workbench.action.lastEditorInGroup" },
+    // { "key": "ctrl+1", "command": "workbench.action.focusFirstEditorGroup" },
+    // { "key": "ctrl+2", "command": "workbench.action.focusSecondEditorGroup" },
+    // { "key": "ctrl+3", "command": "workbench.action.focusThirdEditorGroup" },
+    { "key": "cmd+alt+`", "command": "workbench.action.terminal.focusNext" },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "shift+,",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "<${1:${TM_SELECTED_TEXT}}>" },
+        "when": "editorHasSelection"
+    }
+
+]
