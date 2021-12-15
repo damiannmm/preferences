@@ -81,9 +81,15 @@ end
 alias pwd '__pwd'
 
 function __man
-    /usr/bin/man $argv | col -b | subl -w &
+    if [ (count $argv) = 1 ]
+        /usr/bin/man $argv > $argv
+        subl $argv
+        mv $argv /tmp/man/$argv.txt
+    else
+        /usr/bin/man $argv
+    end
 end
-# alias man '__man'
+alias man '__man'
 
 function __git
     if [ "$argv" = "log" ]
