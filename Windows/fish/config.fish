@@ -38,8 +38,25 @@ set -x LS_COLORS 'ow=01;36'
 alias ll 'ls -hloAF'
 alias la 'ls -A'
 
-# alias vi 'nvim'
-# alias vim 'nvim'
+alias vi 'nvim'
+alias vim 'nvim'
+
+function gxx --argument-names "opt" "path" "base" "ext"
+    set fname $path/$base.$ext
+    set oname $path/$base.out
+    set iname $path/$base.in
+    set tname $path/$base.txt
+
+    g++ $fname -o $oname
+
+    if [ "$opt" = "r" ]
+        ./$oname
+    else if [ "$opt" = "i" ]
+        ./$oname < $iname
+    else if [ "$opt" = "io" ]
+        ./$oname < $iname > $tname
+    end
+end
 
 function __cd
     set tmpdir $dirprev
