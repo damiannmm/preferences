@@ -1,0 +1,8 @@
+<snippet>
+    <description>pair</description>
+    <content>
+        <![CDATA[pair<${1:first}, ${2:second}> {$3:p};]]>
+    </content>
+    <tabTrigger>pair</tabTrigger>
+    <scope>source.c++, source.c++11</scope>
+</snippet>

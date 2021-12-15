@@ -1,0 +1,8 @@
+<snippet>
+    <description>scanf(…)</description>
+    <content>
+        <![CDATA[scanf("${1:%s}"${1/([^%]|%%)*(%.)?.*/(?2:, :\);)/}$2${1/([^%]|%%)*(%.)?.*/(?2:\);)/}]]>
+    </content>
+    <tabTrigger>scanf</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

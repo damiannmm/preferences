@@ -1,0 +1,8 @@
+<snippet>
+    <description>insert</description>
+    <content>
+        <![CDATA[insert]]>
+    </content>
+    <tabTrigger>insert</tabTrigger>
+    <scope>source.c++, source.c++11</scope>
+</snippet>

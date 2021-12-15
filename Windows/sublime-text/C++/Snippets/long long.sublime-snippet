@@ -1,0 +1,8 @@
+<snippet>
+    <description>long long</description>
+    <content>
+        <![CDATA[long long]]>
+    </content>
+    <tabTrigger>long</tabTrigger>
+    <scope>source.c, source.c, source.c++, source.c++11</scope>
+</snippet>

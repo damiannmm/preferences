@@ -1,0 +1,8 @@
+<snippet>
+    <description>deque</description>
+    <content>
+        <![CDATA[deque<${1:int}> ${2:dq};]]>
+    </content>
+    <tabTrigger>deque</tabTrigger>
+    <scope>source.c++, source.c++11</scope>
+</snippet>

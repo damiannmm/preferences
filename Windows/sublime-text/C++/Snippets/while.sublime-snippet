@@ -1,0 +1,8 @@
+<snippet>
+    <description>while (…)</description>
+    <content>
+        <![CDATA[while (${1:/* condition */}) ]]>
+    </content>
+    <tabTrigger>while</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

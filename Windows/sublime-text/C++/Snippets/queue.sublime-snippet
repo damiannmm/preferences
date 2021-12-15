@@ -1,0 +1,8 @@
+<snippet>
+    <description>queue</description>
+    <content>
+        <![CDATA[queue<${1:int}> ${2:q};]]>
+    </content>
+    <tabTrigger>queue</tabTrigger>
+    <scope>source.c++, source.c++11</scope>
+</snippet>

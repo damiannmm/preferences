@@ -1,0 +1,8 @@
+<snippet>
+    <description>endl</description>
+    <content>
+        <![CDATA['\n']]>
+    </content>
+    <tabTrigger>endl</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <description>unordered_set</description>
+    <content>
+        <![CDATA[unordered_set<${1:int}> ${2:uset};]]>
+    </content>
+    <tabTrigger>unordered_set</tabTrigger>
+    <scope>source.c++, source.c++11</scope>
+</snippet>

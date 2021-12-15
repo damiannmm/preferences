@@ -1,0 +1,8 @@
+<snippet>
+    <description>inline</description>
+    <content>
+        <![CDATA[inline]]>
+    </content>
+    <tabTrigger>inline</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

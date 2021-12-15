@@ -1,0 +1,8 @@
+<snippet>
+    <description>typeof</description>
+    <content>
+        <![CDATA[__typeof]]>
+    </content>
+    <tabTrigger>typeof</tabTrigger>
+    <scope>source.c, source.c, source.c++, source.c++11</scope>
+</snippet>

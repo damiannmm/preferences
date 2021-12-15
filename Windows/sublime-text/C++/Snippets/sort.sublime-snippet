@@ -1,0 +1,8 @@
+<snippet>
+    <description>sort</description>
+    <content>
+        <![CDATA[sort(${1:v}${2:.begin()}, ${1:v}${3:.end()}${4/.+/, /}${4:func});]]>
+    </content>
+    <tabTrigger>sort</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

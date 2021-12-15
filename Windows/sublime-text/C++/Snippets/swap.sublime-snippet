@@ -1,0 +1,8 @@
+<snippet>
+    <description>swap</description>
+    <content>
+        <![CDATA[swap]]>
+    </content>
+    <tabTrigger>swap</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <description>reverse</description>
+    <content>
+        <![CDATA[reverse(${1:v}${2:.begin()}, $1${3:.end()});]]>
+    </content>
+    <tabTrigger>reverse</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

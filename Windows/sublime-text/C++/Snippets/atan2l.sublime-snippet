@@ -1,0 +1,8 @@
+<snippet>
+    <description>atan2l</description>
+    <content>
+        <![CDATA[__builtin_atan2l]]>
+    </content>
+    <tabTrigger>atan2l</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <description>sqrtl</description>
+    <content>
+        <![CDATA[__builtin_sqrtl]]>
+    </content>
+    <tabTrigger>sqrtl</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

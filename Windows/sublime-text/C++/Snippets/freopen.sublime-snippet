@@ -1,0 +1,8 @@
+<snippet>
+    <description>freopen</description>
+    <content>
+        <![CDATA[freopen(${1:argv[1]}, ${2:"r"}, ${3:stdin});]]>
+    </content>
+    <tabTrigger>freopen</tabTrigger>
+    <scope>source.c++, source.c++11</scope>
+</snippet>

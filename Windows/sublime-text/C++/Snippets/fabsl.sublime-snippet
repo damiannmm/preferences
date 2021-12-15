@@ -1,0 +1,8 @@
+<snippet>
+    <description>fabsl</description>
+    <content>
+        <![CDATA[__builtin_fabsl]]>
+    </content>
+    <tabTrigger>fabsl</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

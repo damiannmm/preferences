@@ -1,0 +1,8 @@
+<snippet>
+    <description>stoi</description>
+    <content>
+        <![CDATA[stoi]]>
+    </content>
+    <tabTrigger>stoi</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

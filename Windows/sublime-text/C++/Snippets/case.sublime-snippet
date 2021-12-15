@@ -1,0 +1,8 @@
+<snippet>
+    <description>case</description>
+    <content>
+        <![CDATA[case]]>
+    </content>
+    <tabTrigger>case</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

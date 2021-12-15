@@ -1,0 +1,8 @@
+<snippet>
+    <description>to_string</description>
+    <content>
+        <![CDATA[to_string]]>
+    </content>
+    <tabTrigger>to_string</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

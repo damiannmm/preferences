@@ -1,0 +1,8 @@
+<snippet>
+    <description>max_element</description>
+    <content>
+        <![CDATA[max_element(${1:v}${2:.begin()}, ${1:v}${3:.end()}${4/.+/, /}${4:func});]]>
+    </content>
+    <tabTrigger>max_element</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

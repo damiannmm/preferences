@@ -1,0 +1,8 @@
+<snippet>
+    <description>elif (…)</description>
+    <content>
+        <![CDATA[else if (${1:/* condition */}) ]]>
+    </content>
+    <tabTrigger>elif</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

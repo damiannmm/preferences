@@ -1,0 +1,8 @@
+<snippet>
+    <description>min</description>
+    <content>
+        <![CDATA[min]]>
+    </content>
+    <tabTrigger>min</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>

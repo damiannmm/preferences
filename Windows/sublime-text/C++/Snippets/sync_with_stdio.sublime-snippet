@@ -1,0 +1,8 @@
+<snippet>
+    <description>sync_with_stdio</description>
+    <content>
+        <![CDATA[ios_base::sync_with_stdio(${1:false});]]>
+    </content>
+    <tabTrigger>sync</tabTrigger>
+    <scope>source.c, source.c++, source.c++11</scope>
+</snippet>
