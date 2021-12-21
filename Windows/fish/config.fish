@@ -35,6 +35,7 @@ set -x LS_COLORS 'ow=01;36'
 
 
 # aliases and functions
+alias ls 'ls -FG --color'
 alias ll 'ls -hloAF'
 alias la 'ls -A'
 
@@ -67,7 +68,7 @@ function __cd
         builtin cd $argv
     end
     if [ (/usr/bin/ls | wc -l) -le 16 ]
-        /usr/bin/ls -FG
+        /usr/bin/ls -FG --color
     end
 end
 alias cd '__cd'
