@@ -5,10 +5,6 @@
     "[markdown]": { "editor.quickSuggestions": true },
     "autoDocstring.customTemplatePath":
         "/mnt/c/Users/damiann/AppData/Roaming/Code/User/sphinx.mustache",
-    "bracketPairColorizer.consecutivePairColors": [
-        "()", "[]", "{}", ["#ddd","#ddd","#ddd"], "#ddd"
-    ],
-    "bracketPairColorizer.showBracketsInGutter": true,
     "breadcrumbs.enabled": true,
     "color-highlight.markRuler": false,
     "diffEditor.renderSideBySide": true,
@@ -17,6 +13,7 @@
     "editor.colorDecorators": false,
     "editor.fontFamily": "'FiraCode Nerd Font Retina', 'Fira Code Retina'",
     "editor.fontLigatures": true,
+    "editor.fontSize": 13,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.guides.bracketPairs": "active",
@@ -82,6 +79,7 @@
         "**/package-lock.json": true,
         "**/yarn.lock": true
     },
+    "terminal.integrated.fontSize": 13,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.integrated.cursorBlinking": true,

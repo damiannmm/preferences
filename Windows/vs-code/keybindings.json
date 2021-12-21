@@ -29,14 +29,14 @@
     // { "key": "ctrl+1", "command": "workbench.action.focusFirstEditorGroup" },
     // { "key": "ctrl+2", "command": "workbench.action.focusSecondEditorGroup" },
     // { "key": "ctrl+3", "command": "workbench.action.focusThirdEditorGroup" },
-    { "key": "cmd+alt+`", "command": "workbench.action.terminal.focusNext" },
+    { "key": "ctrl+alt+`", "command": "workbench.action.terminal.focusNext" },
     {
-        "key": "cmd+j",
+        "key": "ctrl+j",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
     },
     {
-        "key": "cmd+j",
+        "key": "ctrl+j",
         "command": "workbench.action.terminal.focus",
         "when": "!terminalFocus"
     },
