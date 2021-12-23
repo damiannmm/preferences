@@ -1,3 +1,3 @@
 # Windows
 
-Use WSL.
+Use WSL2.
