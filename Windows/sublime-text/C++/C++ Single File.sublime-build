@@ -1,5 +1,5 @@
 {
-    "shell_cmd": "ubuntu run \" gxx '-' (wslpath '${file_path}') '${file_base_name}' '${file_extension}' \"",
+    "shell_cmd": "ubuntu run \" gxx '-' '${file_name}' \"",
     "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
     "working_dir": "${file_path}",
     "selector": "source.c++",
@@ -8,15 +8,15 @@
     [
         {
             "name": "Run",
-            "shell_cmd": "ubuntu run \" gxx 'r' (wslpath '${file_path}') '${file_base_name}' '${file_extension}' \" "
+            "shell_cmd": "ubuntu run \" gxx 'r' '${file_name}' \" "
         },
         {
             "name": "With Input",
-            "shell_cmd": "ubuntu run \" gxx 'i' (wslpath '${file_path}') '${file_base_name}' '${file_extension}' \" "
+            "shell_cmd": "ubuntu run \" gxx 'i' '${file_name}' \" "
         },
         {
             "name": "With Input-Output",
-            "shell_cmd": "ubuntu run \" gxx 'io' (wslpath '${file_path}') '${file_base_name}' '${file_extension}' \" "
+            "shell_cmd": "ubuntu run \" gxx 'io' '${file_name}' \" "
         }
     ]
 }

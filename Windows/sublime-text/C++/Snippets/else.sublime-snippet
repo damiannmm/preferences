@@ -1,7 +1,9 @@
 <snippet>
     <description>else</description>
     <content>
-        <![CDATA[else]]>
+        <![CDATA[else {
+    ${0:/* code */}
+}]]>
     </content>
     <tabTrigger>else</tabTrigger>
     <scope>source.c, source.c++, source.c++11</scope>

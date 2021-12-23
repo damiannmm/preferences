@@ -2,7 +2,7 @@
     <description>struct {…}</description>
     <content>
         <![CDATA[struct ${1:\$} {
-	$0
+	${0:/* code */}
 };]]>
     </content>
     <tabTrigger>struct</tabTrigger>

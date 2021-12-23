@@ -1,6 +1,8 @@
 <snippet>
     <description>$1.begin(), $1.end()</description>
-    <content><![CDATA[begin(), ${1:v}.end()]]></content>
+    <content>
+        <![CDATA[begin(), ${1:v}.end()]]>
+    </content>
     <tabTrigger>beginend</tabTrigger>
     <scope>(source.c++ | source.objc++) - meta.preprocessor.include - comment - string</scope>
 </snippet>

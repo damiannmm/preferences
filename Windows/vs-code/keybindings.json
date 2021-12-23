@@ -41,10 +41,14 @@
         "when": "!terminalFocus"
     },
     {
+        "key": "alt+backspace",
+        "command": "deleteAllLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
         "key": "shift+,",
         "command": "editor.action.insertSnippet",
         "args": { "snippet": "<${1:${TM_SELECTED_TEXT}}>" },
         "when": "editorHasSelection"
     }
-
 ]

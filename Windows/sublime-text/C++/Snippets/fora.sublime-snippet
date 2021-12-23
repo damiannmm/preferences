@@ -1,7 +1,9 @@
 <snippet>
     <description>for (auto …)</description>
     <content>
-        <![CDATA[for (auto ${1:i} : ${2:v}) ]]>
+        <![CDATA[for (auto ${1:i} : ${2:v}) {
+    ${0:/* code */}
+}]]>
     </content>
     <tabTrigger>fora</tabTrigger>
     <scope>source.c++, source.c++11</scope>

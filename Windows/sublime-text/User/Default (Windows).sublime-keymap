@@ -12,4 +12,11 @@
 	{ "keys": ["ctrl+shift+;"], "command": "colon_insert" },
 	{ "keys": ["ctrl+,"], "command": "comma_insert" },
 	{ "keys": ["ctrl+shift+n"], "command": "open_terminal" },
+	{
+		"keys": ["alt+backspace"],
+		"command": "run_macro_file",
+		"args": {
+			"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"
+		}
+	},
 ]

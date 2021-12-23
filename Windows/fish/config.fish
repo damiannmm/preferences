@@ -44,20 +44,15 @@ alias la 'ls -A'
 alias vi 'nvim'
 alias vim 'nvim'
 
-function gxx --argument-names "opt" "path" "base" "ext"
-    set fname $path/$base.$ext
-    set oname $path/$base.out
-    set iname $path/$base.in
-    set tname $path/$base.txt
-
-    g++ $fname -o $oname
+function gxx --argument-names "opt" "filename"
+    g++ $filename
 
     if [ "$opt" = "r" ]
-        ./$oname
+        time ./a.out
     else if [ "$opt" = "i" ]
-        ./$oname < $iname
+        time ./a.out < in.txt
     else if [ "$opt" = "io" ]
-        ./$oname < $iname > $tname
+        time ./a.out < in.txt > out.txt
     end
 end
 
