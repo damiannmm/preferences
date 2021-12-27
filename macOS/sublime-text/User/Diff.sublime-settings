@@ -1,5 +1,0 @@
-// These settings override both User and Default settings for the Diff syntax
-{
-	"detect_indentation": false,
-	"tab_size": 8
-}

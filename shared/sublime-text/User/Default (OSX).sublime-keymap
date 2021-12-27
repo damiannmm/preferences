@@ -9,7 +9,7 @@
 	{ "keys": ["super+shift+g"], "command": "find_prev" },
 	{ "keys": ["super+alt+g"], "command": "find_all_under" },
 	{ "keys": ["super+;"], "command": "semicolon_insert" },
-	{ "keys": ["super+shift+;"], "command": "colon_insert" },
+	{ "keys": ["super+shift+;"], "command": "Scripts/colon_insert" },
 	{ "keys": ["super+,"], "command": "comma_insert" },
 	{ "keys": ["super+shift+n"], "command": "open_terminal" },
 ]
