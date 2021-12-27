@@ -1,8 +1,0 @@
-// These settings override both User and Default settings for the PlainTasks syntax
-{
-	"cancelled_tasks_bullet": "[-]",
-	"detect_indentation": false,
-	"done_tasks_bullet": "[x]",
-	"open_tasks_bullet": "[ ]",
-	"show_minimap": false,
-}
