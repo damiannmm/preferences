@@ -13,5 +13,12 @@
         }
       }
     }
+  },
+  "snippets": {
+    "ultisnips": {
+      "directories": [
+        "ultisnips"
+      ]
+    }
   }
 }

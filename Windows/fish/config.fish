@@ -30,16 +30,30 @@ end
 
 set -x EDITOR 'nvim'
 
+#set -x MANPAGER 'nvim +Man!'
+#set -x MANWIDTH 999
+
 set -x LC_ALL 'en_US.UTF-8'
 set -x LANG 'en_US.UTF-8'
 
 set -x LS_COLORS 'ow=01;36'
+
+set -Ux LESS_TERMCAP_mb \e\[1\x3B32m
+set -Ux LESS_TERMCAP_md \e\[1\x3B32m
+set -Ux LESS_TERMCAP_me \e\[0m
+set -Ux LESS_TERMCAP_se \e\[0m
+set -Ux LESS_TERMCAP_so \e\[01\x3B33m
+set -Ux LESS_TERMCAP_ue \e\[0m
+set -Ux LESS_TERMCAP_us \e\[1\x3B4\x3B31m
 
 
 # aliases and functions
 alias ls 'ls -FG --color'
 alias ll 'ls -hloAF'
 alias la 'ls -A'
+
+alias pbpaste 'powershell.exe Get-Clipboard'
+alias pbcopy 'clip.exe'
 
 alias vi 'nvim'
 alias vim 'nvim'
@@ -87,7 +101,7 @@ function __man
         /usr/bin/man $argv
     end
 end
-alias man '__man'
+# alias man '__man'
 
 function __git
     if [ "$argv" = "log" ]
