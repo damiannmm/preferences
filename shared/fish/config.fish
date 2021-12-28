@@ -49,7 +49,7 @@ switch (uname)
         alias _ls /bin/ls
     case Linux
         alias _pwd /usr/bin/pwd
-        alias _ls /usr/bin/ls
+        alias _ls '/usr/bin/ls --color'
 
         if string match -q '*WSL*' (uname -r)
             alias pbpaste 'powershell.exe Get-Clipboard'
@@ -57,7 +57,7 @@ switch (uname)
         end         
 end
 
-alias ls '_ls -FG --color'
+alias ls '_ls -FG'
 alias ll 'ls -hloAF'
 alias la 'ls -A'
 
@@ -85,7 +85,7 @@ function __cd
         builtin cd $argv
     end
     if [ (_ls | wc -l) -le 16 ]
-        _ls -FG --color
+        ls
     end
 end
 alias cd '__cd'
