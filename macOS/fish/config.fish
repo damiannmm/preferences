@@ -1,1 +1,0 @@
-../../shared/fish/config.fish

@@ -39,9 +39,8 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/.gitkeep": true,  // additional
         "**/__pycache__": true,
-        // "**/_site": true,
+        "**/_site": true,
         "**/code-stdin**.txt": true,
     },
     "files.watcherExclude": {
