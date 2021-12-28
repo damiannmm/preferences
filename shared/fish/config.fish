@@ -58,8 +58,8 @@ switch (uname)
 end
 
 alias ls '_ls -FG --color'
-alias ll '_ls -hloAF'
-alias la '_ls -A'
+alias ll 'ls -hloAF'
+alias la 'ls -A'
 
 alias vi 'nvim'
 alias vim 'nvim'
