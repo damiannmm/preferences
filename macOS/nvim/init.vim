@@ -13,7 +13,7 @@ call plug#begin()
 Plug 'ap/vim-css-color'
 " Plug 'dag/vim-fish'
 Plug 'dkarter/bullets.vim'
-" Plug 'glepnir/dashboard-nvim'
+Plug 'glepnir/dashboard-nvim'
 " Plug 'honza/vim-snippets'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf'

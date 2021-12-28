@@ -21,9 +21,9 @@ function __prompt_icon
     echo -n ''
     set_color normal
 end
-set tide_prompt_char_icon (__prompt_icon black)
+set tide_character_icon (__prompt_icon black)
 
-set tide_pwd_truncate_margin 1024
+# set tide_pwd_truncate_margin 1024
 
 set -x EDITOR 'nvim'
 
@@ -60,10 +60,10 @@ function __pwd
 end
 alias pwd '__pwd'
 
-function __man
-    /usr/bin/man $argv | col -b | subl -w &
-end
-alias man '__man'
+# function __man
+#     /usr/bin/man $argv | col -b | subl -w &
+# end
+# alias man '__man'
 
 function __git
     if [ "$argv" = "log" ]
