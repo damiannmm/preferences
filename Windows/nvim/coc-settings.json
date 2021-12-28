@@ -14,11 +14,5 @@
       }
     }
   },
-  "snippets": {
-    "ultisnips": {
-      "directories": [
-        "ultisnips"
-      ]
-    }
-  }
+  "snippets.priority": 100
 }

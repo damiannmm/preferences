@@ -16,22 +16,19 @@ end
 # set -e __append_path
 
 # variables
-# function __prompt_icon
-#     set bg_col $argv
-#     set_color -b $bg_col
-#     echo -n ' $ '
-#     set_color $bg_col -b normal
-#     echo -n ''
-#     set_color normal
-# end
-# set tide_prompt_char_icon (__prompt_icon black)
+function __prompt_icon
+    set bg_col $argv
+    set_color -b $bg_col
+    echo -n ' $ '
+    set_color $bg_col -b normal
+    echo -n ''
+    set_color normal
+end
+set tide_character_icon (__prompt_icon black)
 
 # set tide_pwd_truncate_margin 1024
 
 set -x EDITOR 'nvim'
-
-#set -x MANPAGER 'nvim +Man!'
-#set -x MANWIDTH 999
 
 set -x LC_ALL 'en_US.UTF-8'
 set -x LANG 'en_US.UTF-8'

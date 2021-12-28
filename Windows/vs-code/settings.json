@@ -102,7 +102,6 @@
     "workbench.editor.showTabs": true,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.settings.editor": "json",
-    "workbench.sideBar.location": "right",
     "zenMode.fullScreen": false,
     "zenMode.hideTabs": false,
     "zenMode.hideLineNumbers": false,

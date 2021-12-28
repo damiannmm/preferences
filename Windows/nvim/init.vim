@@ -14,7 +14,6 @@ Plug 'ap/vim-css-color'
 Plug 'dag/vim-fish'
 Plug 'dkarter/bullets.vim'
 Plug 'glepnir/dashboard-nvim'
-" Plug 'honza/vim-snippets'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
@@ -64,9 +63,13 @@ inoremap <silent><expr> <C-space>
 	\ pumvisible() ? "\<C-n>" :
 	\ <SID>check_back_space() ? "\<C-space>" :
 	\ coc#refresh()
-" inoremap <expr> <C-space> pumvisible() ? "\<C-n>" : "\<C-space>"
-" inoremap <expr> <C-S-space> pumvisible() ? "\<C-p>" : "\<C-S-space>"
-inoremap <silent><expr> <Tab> pumvisible() ? coc#_select_confirm(): "\<Tab>"
+
+inoremap <silent><expr> <TAB>
+    \ pumvisible() ? coc#_select_confirm() :
+    \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" : "\<Tab>"
+
+let g:coc_snippet_next = '<Tab>'
+let g:coc_snippet_prev = '<S-Tab>'
 
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1

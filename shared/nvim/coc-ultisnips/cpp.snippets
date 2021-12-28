@@ -1,0 +1,119 @@
+extends c
+
+snippet include "#include <..>" b
+#include <${1:bits/stdc++.h}>
+endsnippet
+
+snippet using "using …" b
+using namespace ${1:std};
+endsnippet
+
+snippet main "int main(..)" b
+int main()
+{
+	${0:/* code */}
+	return 0;
+}
+endsnippet
+
+snippet main_int "main(..)"
+main()
+{
+	${0:/* code */}
+	return 0;
+}
+endsnippet
+
+snippet scanf "scanf(..)"
+scanf("${1:%s}", ${2:var});
+endsnippet
+
+snippet printf "printf(..)"
+printf("${1:%d}\n"${2:, ${3:var}});
+endsnippet
+
+snippet if "if (..)"
+if (${1:/* condition */}) {
+	${0:/* code */}
+}
+endsnippet
+
+snippet elif "elif (..)"
+else if (${1:/* condition */}) {
+	${0:/* code */}
+}
+endsnippet
+
+snippet else "else"
+else {
+	${0:/* code */}
+}
+endsnippet
+
+snippet long "long long"
+long long
+endsnippet
+
+snippet fori "for (int ..)"
+for (int ${1:i} = ${2:0}; $1 < ${3:count}; ${4:$1++}) {
+	${0:/* code */}
+}
+endsnippet
+
+snippet fora "for (auto ..)"
+for (auto ${1:i} : ${2:v}) {
+	${0:/* code */}
+}
+endsnippet
+
+snippet while "while (..)"
+while (${1:/* condition */}) {
+	${0:/* code */}
+}
+endsnippet
+
+snippet dowhile "do (..) while"
+do {
+	${0:/* code */}
+} while (${1:/* condition */});
+endsnippet
+
+snippet beginend "begin()..end()"
+begin(), ${1:v}.end()
+endsnippet
+
+snippet fill "fill(..)"
+fill(${1:v}${2:.begin()}, $1${3:.end()}, ${4:value});
+endsnippet
+
+snippet next_permutation "next_permutation(..)"
+next_permutation(${1:v}${2:.begin()}, $1${3:.end()});
+endsnippet
+
+snippet max_element "max_element(..)"
+max_element(${1:v}${2:.begin()}, $1${3:.end()}${4:, ${5:func}});
+endsnippet
+
+snippet min_element "min_element(..)"
+min_element(${1:v}${2:.begin()}, $1${3:.end()}${4:, ${5:func}});
+endsnippet
+
+snippet reverse "reverse(..)"
+reverse(${1:v}${2:.begin()}, $1${3:.end()});
+endsnippet
+
+snippet sort "sort(..)"
+sort(${1:v}${2:.begin()}, $1${3:.end()}${4:, ${5:func}});
+endsnippet
+
+snippet bitcount "bitcount"
+__builtin_popcount
+endsnippet
+
+snippet sqrtl "sqrtl"
+__builtin__sqrtl
+endsnippet
+
+snippet gcd "gcd"
+__gcd
+endsnippet
