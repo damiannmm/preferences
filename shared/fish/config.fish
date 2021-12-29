@@ -54,7 +54,7 @@ switch (uname)
         if string match -q '*WSL*' (uname -r)
             alias pbpaste 'powershell.exe Get-Clipboard'
             alias pbcopy 'clip.exe'
-        end         
+        end
 end
 
 alias ls '_ls -FG'

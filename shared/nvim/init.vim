@@ -45,7 +45,7 @@ let g:dashboard_default_executive = 'fzf'
 nnoremap <C-b> :NERDTreeToggle<CR>
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'solarized_flood'
+let g:airline_theme = 'understated'
 
 let g:rainbow_active = 1
 
@@ -56,21 +56,21 @@ let g:VM_maps['Find Under'] = '<C-d>'
 let g:VM_maps['Find Subword Under'] = '<C-d>'
 let g:VM_maps['Select All'] = '<C-A-g>'
 
-" use <C-space> for trigger completion and navigate to 
+" use <C-space> for trigger completion and navigate to
 " the next complete item
 function! s:check_back_space() abort
-	let col = col('.') - 1
-	return !col || getline('.')[col - 1] =~ '\s'
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1] =~ '\s'
 endfunction
 
-inoremap <silent><expr> <C-space> 
-	\ pumvisible() ? "\<C-n>" :
-	\ <SID>check_back_space() ? "\<C-space>" :
-	\ coc#refresh()
+inoremap <silent><expr> <C-space>
+  \ pumvisible() ? "\<C-n>" :
+  \ <SID>check_back_space() ? "\<C-space>" :
+  \ coc#refresh()
 
 inoremap <silent><expr> <TAB>
-    \ pumvisible() ? coc#_select_confirm() :
-    \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" : "\<Tab>"
+  \ pumvisible() ? coc#_select_confirm() :
+  \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" : "\<Tab>"
 
 let g:coc_snippet_next = '<Tab>'
 let g:coc_snippet_prev = '<S-Tab>'
@@ -81,36 +81,44 @@ let g:cpp_class_decl_highlight = 1
 let g:cpp_posix_standard = 1
 
 call wilder#setup({
-    \ 'modes': [':', '/', '?'],
-    \ 'next_key': '<Down>',
-    \ 'previous_key': '<Up>',
-    \ 'accept_key': '<Tab>',
-    \ 'reject_key': '<Left>',
-    \ })
+  \ 'modes': [':', '/', '?'],
+  \ 'next_key': '<Down>',
+  \ 'previous_key': '<Up>',
+  \ 'accept_key': '<Tab>',
+  \ 'reject_key': '<Left>',
+  \ })
 
 call wilder#set_option('pipeline', [
-    \   wilder#branch(
-    \     wilder#cmdline_pipeline({
-    \       'language': 'python',
-    \       'fuzzy': 1,
-    \     }),
-    \     wilder#python_search_pipeline({
-    \       'pattern': wilder#python_fuzzy_pattern(),
-    \       'sorter': wilder#python_difflib_sorter(),
-    \       'engine': 're',
-    \     }),
-    \   ),
-    \ ])
+  \ wilder#branch(
+  \     wilder#cmdline_pipeline({
+  \         'language': 'python',
+  \         'fuzzy': 1,
+  \     }),
+  \     wilder#python_search_pipeline({
+  \         'pattern': wilder#python_fuzzy_pattern(),
+  \         'sorter': wilder#python_difflib_sorter(),
+  \         'engine': 're',
+  \     }),
+  \ ),
+  \ ])
 
 let s:highlighters = [
-    \ wilder#basic_highlighter(),
-    \ ]
+  \ wilder#basic_highlighter(),
+  \ ]
 
 call wilder#set_option('renderer', wilder#renderer_mux({
-    \ ':': wilder#popupmenu_renderer({
-    \   'highlighter': s:highlighters,
-    \ }),
-    \ '/': wilder#wildmenu_renderer({
-    \   'highlighter': s:highlighters,
-    \ }),
-    \ }))
+  \ ':': wilder#popupmenu_renderer({
+  \     'highlighter': s:highlighters,
+  \     'left': [
+  \         ' ', wilder#popupmenu_devicons(),
+  \     ],
+  \     'right': [
+  \         ' ', wilder#popupmenu_scrollbar(),
+  \     ],
+  \ }),
+  \ '/': wilder#wildmenu_renderer(wilder#wildmenu_airline_theme({
+  \     'highlights': {},
+  \     'highlighter': s:highlighters,
+  \     'italic': 0,
+  \ })),
+  \ }))
