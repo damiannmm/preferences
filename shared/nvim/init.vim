@@ -40,8 +40,6 @@ set encoding=UTF-8
 let g:dashboard_custom_header = []
 let g:dashboard_default_executive = 'fzf'
 
-nnoremap <C-b> :NERDTreeToggle<CR>
-
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'understated'
 
@@ -54,8 +52,10 @@ let g:VM_maps['Find Under'] = '<C-d>'
 let g:VM_maps['Find Subword Under'] = '<C-d>'
 let g:VM_maps['Select All'] = '<C-A-g>'
 
+nnoremap <silent><C-b> :NERDTreeToggle<CR>
+
 autocmd TermEnter term://*toggleterm#*
-      \ tnoremap <silent><C-j> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+  \ tnoremap <silent><C-j> <Cmd>exe v:count1 . "ToggleTerm"<CR>
 nnoremap <silent><C-j> <Cmd>exe v:count1 . "ToggleTerm size=8"<CR>
 inoremap <silent><C-j> <Esc><Cmd>exe v:count1 . "ToggleTerm size=8"<CR>
 
