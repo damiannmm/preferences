@@ -52,8 +52,8 @@ switch (uname)
         alias _ls '/usr/bin/ls --color'
 
         if string match -q '*WSL*' (uname -r)
-            alias pbpaste 'powershell.exe Get-Clipboard'
-            alias pbcopy 'clip.exe'
+            alias pbpaste 'win32yank -o'
+            alias pbcopy 'win32yank -i'
         end
 end
 
