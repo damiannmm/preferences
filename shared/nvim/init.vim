@@ -11,6 +11,7 @@
 
 call plug#begin()
 
+Plug 'akinsho/toggleterm.nvim'
 Plug 'ap/vim-css-color'
 Plug 'dag/vim-fish'
 Plug 'dkarter/bullets.vim'
@@ -36,9 +37,6 @@ call plug#end()
 
 set encoding=UTF-8
 
-autocmd TermOpen * setlocal nonumber norelativenumber
-nnoremap <C-j> :belowright split \| resize 8 \| terminal<CR>i
-
 let g:dashboard_custom_header = []
 let g:dashboard_default_executive = 'fzf'
 
@@ -56,8 +54,11 @@ let g:VM_maps['Find Under'] = '<C-d>'
 let g:VM_maps['Find Subword Under'] = '<C-d>'
 let g:VM_maps['Select All'] = '<C-A-g>'
 
-" use <C-space> for trigger completion and navigate to
-" the next complete item
+autocmd TermEnter term://*toggleterm#*
+      \ tnoremap <silent><C-j> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+nnoremap <silent><C-j> <Cmd>exe v:count1 . "ToggleTerm size=8"<CR>
+inoremap <silent><C-j> <Esc><Cmd>exe v:count1 . "ToggleTerm size=8"<CR>
+
 function! s:check_back_space() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1] =~ '\s'
