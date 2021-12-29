@@ -33,13 +33,15 @@ set -x LANG 'en_US.UTF-8'
 
 set -x LS_COLORS 'ow=01;36'
 
-set -Ux LESS_TERMCAP_mb \e\[1\x3B32m
-set -Ux LESS_TERMCAP_md \e\[1\x3B32m
-set -Ux LESS_TERMCAP_me \e\[0m
-set -Ux LESS_TERMCAP_se \e\[0m
-set -Ux LESS_TERMCAP_so \e\[01\x3B33m
-set -Ux LESS_TERMCAP_ue \e\[0m
-set -Ux LESS_TERMCAP_us \e\[1\x3B4\x3B31m
+set -x LESS_TERMCAP_mb \e\[1\x3B32m
+set -x LESS_TERMCAP_md \e\[1\x3B32m
+set -x LESS_TERMCAP_me \e\[0m
+set -x LESS_TERMCAP_se \e\[0m
+set -x LESS_TERMCAP_so \e\[01\x3B33m
+set -x LESS_TERMCAP_ue \e\[0m
+set -x LESS_TERMCAP_us \e\[1\x3B4\x3B31m
+
+set -x unamer (uname -r)
 
 
 # aliases and functions

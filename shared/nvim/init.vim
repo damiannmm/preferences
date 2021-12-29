@@ -37,6 +37,22 @@ call plug#end()
 
 set encoding=UTF-8
 
+if $unamer =~ 'WSL'
+    set clipboard+=unnamedplus
+    let g:clipboard = {
+      \ 'name': 'win32yank-wsl',
+      \ 'copy': {
+      \     '+': 'win32yank -i --crlf',
+      \     '*': 'win32yank -i --crlf',
+      \ },
+      \ 'paste': {
+      \     '+': 'win32yank -o --lf',
+      \     '*': 'win32yank -o --lf',
+      \ },
+      \ 'cache_enabled': 0,
+      \ }
+endif
+
 let g:dashboard_custom_header = []
 let g:dashboard_default_executive = 'fzf'
 
@@ -52,6 +68,10 @@ let g:VM_maps['Find Under'] = '<C-d>'
 let g:VM_maps['Find Subword Under'] = '<C-d>'
 let g:VM_maps['Select All'] = '<C-A-g>'
 
+let g:tagbar_width = 24
+nnoremap <silent><C-p> :TagbarToggle<CR>
+
+let g:NERDTreeWinSize = 24
 nnoremap <silent><C-b> :NERDTreeToggle<CR>
 
 autocmd TermEnter term://*toggleterm#*
