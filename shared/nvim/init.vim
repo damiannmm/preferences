@@ -7,12 +7,14 @@
 :set expandtab
 :set softtabstop=4
 :set mouse=a
+:set nowildmenu
 
 call plug#begin()
 
 Plug 'ap/vim-css-color'
 Plug 'dag/vim-fish'
 Plug 'dkarter/bullets.vim'
+Plug 'gelguy/wilder.nvim'
 Plug 'glepnir/dashboard-nvim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf'
@@ -24,7 +26,6 @@ Plug 'preservim/nerdtree'
 Plug 'preservim/tagbar'
 Plug 'neoclide/coc.nvim'
 Plug 'ryanoasis/vim-devicons'
-Plug 'tc50cal/vim-terminal'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
@@ -34,6 +35,9 @@ Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 set encoding=UTF-8
+
+autocmd TermOpen * setlocal nonumber norelativenumber
+nnoremap <C-j> :belowright split \| resize 8 \| terminal<CR>i
 
 let g:dashboard_custom_header = []
 let g:dashboard_default_executive = 'fzf'
@@ -75,3 +79,38 @@ let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
 let g:cpp_posix_standard = 1
+
+call wilder#setup({
+    \ 'modes': [':', '/', '?'],
+    \ 'next_key': '<Down>',
+    \ 'previous_key': '<Up>',
+    \ 'accept_key': '<Tab>',
+    \ 'reject_key': '<Left>',
+    \ })
+
+call wilder#set_option('pipeline', [
+    \   wilder#branch(
+    \     wilder#cmdline_pipeline({
+    \       'language': 'python',
+    \       'fuzzy': 1,
+    \     }),
+    \     wilder#python_search_pipeline({
+    \       'pattern': wilder#python_fuzzy_pattern(),
+    \       'sorter': wilder#python_difflib_sorter(),
+    \       'engine': 're',
+    \     }),
+    \   ),
+    \ ])
+
+let s:highlighters = [
+    \ wilder#basic_highlighter(),
+    \ ]
+
+call wilder#set_option('renderer', wilder#renderer_mux({
+    \ ':': wilder#popupmenu_renderer({
+    \   'highlighter': s:highlighters,
+    \ }),
+    \ '/': wilder#wildmenu_renderer({
+    \   'highlighter': s:highlighters,
+    \ }),
+    \ }))
