@@ -51,9 +51,9 @@ if $unamer =~ 'WSL'
       \ },
       \ 'cache_enabled': 0,
       \ }
-endif
 
-inoremap <C-j> <Esc>o
+    inoremap <C-j> <Esc>o
+endif
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'understated'
