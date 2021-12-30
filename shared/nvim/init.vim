@@ -53,13 +53,17 @@ if $unamer =~ 'WSL'
       \ }
 endif
 
-let g:dashboard_custom_header = []
-let g:dashboard_default_executive = 'fzf'
+inoremap <C-j> <Esc>o
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'understated'
 
 let g:rainbow_active = 1
+
+let g:dashboard_custom_header = []
+let g:dashboard_default_executive = 'fzf'
+
+nnoremap <silent><C-f> :Rg<CR>
 
 let g:VM_set_statusline = 0
 
@@ -77,7 +81,7 @@ nnoremap <silent><C-b> :NERDTreeToggle<CR>
 autocmd TermEnter term://*toggleterm#*
   \ tnoremap <silent><C-j> <Cmd>exe v:count1 . "ToggleTerm"<CR>
 nnoremap <silent><C-j> <Cmd>exe v:count1 . "ToggleTerm size=8"<CR>
-inoremap <silent><C-j> <Esc><Cmd>exe v:count1 . "ToggleTerm size=8"<CR>
+" inoremap <silent><C-j> <Esc><Cmd>exe v:count1 . "ToggleTerm size=8"<CR>
 
 function! s:check_back_space() abort
     let col = col('.') - 1
