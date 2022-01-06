@@ -9,7 +9,7 @@
 :set mouse=a
 :set nowildmenu
 
-call plug#begin()
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'akinsho/toggleterm.nvim'
 Plug 'ap/vim-css-color'
