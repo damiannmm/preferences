@@ -3,8 +3,7 @@
     "[json]": { "editor.formatOnSave": false },
     "[jsonc]": { "editor.formatOnSave": false },
     "[markdown]": { "editor.quickSuggestions": true },
-    "autoDocstring.customTemplatePath":
-        "/Users/damiann/Developer/preferences/macOS/vs-code/sphinx.mustache",
+    "autoDocstring.docstringFormat": "numpy",
     "breadcrumbs.enabled": true,
     "color-highlight.markRuler": false,
     "diffEditor.renderSideBySide": true,
@@ -61,7 +60,7 @@
     "python.linting.enabled": false,
     "python.pythonPath": "/usr/local/bin/python3",
     "python.terminal.activateEnvironment": false,
-    "python.workspaceSymbols.ctagsPath": "/usr/local/bin/ctags",
+    "python.workspaceSymbols.ctagsPath": "/usr/bin/ctags",
     "python.workspaceSymbols.exclusionPatterns": [
         "**/site-packages/**",
         "env/**"  // additional
