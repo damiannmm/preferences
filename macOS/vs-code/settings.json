@@ -48,7 +48,7 @@
         "**/env/***": true  // additional
     },
     "indentRainbow.errorColor": "rgba(128,32,32,0.3)",
-    "indentRainbow.excludedLanguages": ["diff"],
+    "indentRainbow.excludedLanguages": [ "diff" ],
     "indentRainbow.colors": [
         "rgba(16,16,16,0.1)",
         "rgba(16,16,16,0.3)",
@@ -86,7 +86,9 @@
         "fish": { "path": "/usr/local/bin/fish" }
     },
     "terminal.integrated.showExitAlert": false,
-    "vsicons.associations.folders": [ { "icon": "config", "extensions": ["conf"] } ],
+    "vsicons.associations.folders": [
+        { "icon": "config", "extensions": ["conf"] },
+    ],
     "window.openFilesInNewWindow": "off",
     "workbench.colorCustomizations": {
         "editorBracketHighlight.foreground1": "#fff",

@@ -49,7 +49,7 @@
         "**/env/***": true  // additional
     },
     "indentRainbow.errorColor": "rgba(128,32,32,0.3)",
-    "indentRainbow.excludedLanguages": ["diff"],
+    "indentRainbow.excludedLanguages": [ "diff" ],
     "indentRainbow.colors": [
         "rgba(16,16,16,0.1)",
         "rgba(16,16,16,0.3)",
