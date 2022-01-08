@@ -3,8 +3,7 @@
     "[json]": { "editor.formatOnSave": false },
     "[jsonc]": { "editor.formatOnSave": false },
     "[markdown]": { "editor.quickSuggestions": true },
-    "autoDocstring.customTemplatePath":
-        "/mnt/c/Users/damiann/AppData/Roaming/Code/User/sphinx.mustache",
+    "autoDocstring.docstringFormat": "numpy",
     "breadcrumbs.enabled": true,
     "color-highlight.markRuler": false,
     "diffEditor.renderSideBySide": true,
