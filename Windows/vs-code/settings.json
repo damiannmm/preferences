@@ -13,7 +13,7 @@
     "editor.fontFamily": "'FiraCode Nerd Font Retina', 'Fira Code Retina'",
     "editor.fontLigatures": true,
     "editor.fontSize": 13,
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.formatOnType": true,
     "editor.guides.bracketPairs": "active",
     "editor.minimap.enabled": false,
@@ -78,8 +78,7 @@
         "**/yarn.lock": true
     },
     "terminal.integrated.fontSize": 13,
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "terminal.integrated.cursorBlinking": true,
     "vsicons.associations.folders": [
         { "icon": "config", "extensions": ["conf"] },
@@ -97,8 +96,6 @@
         "*.ipynb": "jupyter-notebook"
     },
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.editor.showTabs": true,
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.settings.editor": "json",
     "zenMode.fullScreen": false,
     "zenMode.hideTabs": false,
