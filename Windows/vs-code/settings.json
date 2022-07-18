@@ -2,7 +2,12 @@
     "[html]": { "editor.formatOnSave": false },
     "[json]": { "editor.formatOnSave": false },
     "[jsonc]": { "editor.formatOnSave": false },
-    "[markdown]": { "editor.quickSuggestions": true },
+    "[markdown]": { "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
+    },
     "autoDocstring.docstringFormat": "numpy",
     "breadcrumbs.enabled": true,
     "color-highlight.markRuler": false,
