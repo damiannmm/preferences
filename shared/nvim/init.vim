@@ -66,6 +66,7 @@ nnoremap <silent><C-f> :Rg<CR>
 let g:VM_set_statusline = 0
 
 let g:VM_maps = {}
+let g:VM_maps['Exit'] = '<C-c>'
 let g:VM_maps['Find Under'] = '<C-d>'
 let g:VM_maps['Find Subword Under'] = '<C-d>'
 let g:VM_maps['Select All'] = '<C-A-g>'
