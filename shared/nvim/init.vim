@@ -51,6 +51,8 @@ if $unamer =~ 'WSL'
       \ },
       \ 'cache_enabled': 0,
       \ }
+else
+    set clipboard=unnamed
 endif
 
 let g:airline_powerline_fonts = 1
