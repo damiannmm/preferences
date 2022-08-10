@@ -1,8 +1,11 @@
 [user]
-	email = 1107336+damiannmm@users.noreply.github.com
 	name = Damiann Mangan
-[credential]
-	helper = store
+	email = damiann.mm@gmail.com
+	signingkey = 3F1B149118DFFA0D
+[commit]
+	gpgsign = true
+; [credential]
+; 	helper = store
 [core]
 	excludesfile = ~/.gitignore_global
 	ignorecase = true
@@ -29,5 +32,7 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[gpg]
+	program = gpg
 [hub]
 	protocol = https
