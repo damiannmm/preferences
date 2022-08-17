@@ -57,6 +57,7 @@
 	"show_definitions": false,
 	"show_minimap": false,
 	"show_panel_on_build": false,
+	"swallow_startup_errors": true,
 	"status_bar_brighter": true,
 	"tabs_small": true,
 	"theme": "Afterglow.sublime-theme",
