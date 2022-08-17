@@ -94,6 +94,7 @@
     "vsicons.associations.folders": [
         { "icon": "config", "extensions": ["conf"] },
     ],
+    "vsicons.dontShowNewVersionMessage": true,
     "window.openFilesInNewWindow": "off",
     "workbench.colorCustomizations": {
         "editorBracketHighlight.foreground1": "#fff",
@@ -104,11 +105,11 @@
         "editorBracketHighlight.foreground6": "#ccc",
     },
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.settings.editor": "json",
-    "zenMode.fullScreen": false,
-    "zenMode.hideTabs": false,
-    "zenMode.hideLineNumbers": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
+    "workbench.settings.editor": "json",
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideTabs": false,
 }
