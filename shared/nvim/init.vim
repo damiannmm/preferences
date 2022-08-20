@@ -84,19 +84,19 @@ autocmd TermEnter term://*toggleterm#*
 nnoremap <silent><C-j> <Cmd>exe v:count1 . "ToggleTerm size=8"<CR>
 " inoremap <silent><C-j> <Esc><Cmd>exe v:count1 . "ToggleTerm size=8"<CR>
 
-function! s:check_back_space() abort
+function! CheckBackspace() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1] =~ '\s'
 endfunction
 
 inoremap <silent><expr> <C-space>
-  \ pumvisible() ? "\<C-n>" :
-  \ <SID>check_back_space() ? "\<C-space>" :
+  \ coc#pum#visible() ? cic#pum#next(1) :
+  \ Checkbackspace() ? "\<C-space>" :
   \ coc#refresh()
 
 inoremap <silent><expr> <TAB>
-  \ pumvisible() ? coc#_select_confirm() :
-  \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" : "\<Tab>"
+  \ coc#pum#visible() ? coc#pum#confirm() :
+  \ "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<Tab>"
 
 let g:coc_snippet_next = '<Tab>'
 let g:coc_snippet_prev = '<S-Tab>'
