@@ -117,7 +117,7 @@ call wilder#setup({
 call wilder#set_option('pipeline', [
   \ wilder#branch(
   \     wilder#cmdline_pipeline({
-  \         'language': 'python',
+  \         'language': 'python3',
   \         'fuzzy': 1,
   \     }),
   \     wilder#python_search_pipeline({
