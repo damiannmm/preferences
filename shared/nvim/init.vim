@@ -91,12 +91,12 @@ endfunction
 
 inoremap <silent><expr> <C-space>
   \ coc#pum#visible() ? cic#pum#next(1) :
-  \ Checkbackspace() ? "\<C-space>" :
+  \ CheckBackspace() ? "\<C-space>" :
   \ coc#refresh()
 
 inoremap <silent><expr> <TAB>
   \ coc#pum#visible() ? coc#pum#confirm() :
-  \ "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<Tab>"
+  \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" : "\<Tab>"
 
 let g:coc_snippet_next = '<Tab>'
 let g:coc_snippet_prev = '<S-Tab>'
