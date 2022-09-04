@@ -64,14 +64,8 @@
     ],
     "python.languageServer": "Jedi",
     "python.linting.enabled": false,
-    "python.pythonPath": "/usr/local/bin/python3",
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "python.terminal.activateEnvironment": false,
-    "python.workspaceSymbols.ctagsPath": "/usr/bin/ctags",
-    "python.workspaceSymbols.exclusionPatterns": [
-        "**/site-packages/**",
-        "env/**"  // additional
-    ],
-    "python.workspaceSymbols.enabled": true,
     "search.exclude": {
 		"**/node_modules": true,
 		"**/bower_components": true,
@@ -91,10 +85,7 @@
         "fish": { "path": "/usr/local/bin/fish" }
     },
     "terminal.integrated.showExitAlert": false,
-    "vsicons.associations.folders": [
-        { "icon": "config", "extensions": ["conf"] },
-    ],
-    "vsicons.dontShowNewVersionMessage": true,
+    "terminal.integrated.tabs.enabled": false,
     "window.openFilesInNewWindow": "off",
     "workbench.colorCustomizations": {
         "editorBracketHighlight.foreground1": "#fff",
@@ -102,7 +93,7 @@
         "editorBracketHighlight.foreground3": "#eee",
         "editorBracketHighlight.foreground4": "#bbb",
         "editorBracketHighlight.foreground5": "#ddd",
-        "editorBracketHighlight.foreground6": "#ccc",
+        "editorBracketHighlight.foreground6": "#ccc"
     },
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editorAssociations": {
@@ -111,5 +102,5 @@
     "workbench.settings.editor": "json",
     "zenMode.fullScreen": false,
     "zenMode.hideLineNumbers": false,
-    "zenMode.hideTabs": false,
+    "zenMode.hideTabs": false
 }
