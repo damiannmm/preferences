@@ -62,7 +62,7 @@
         "rgba(16,16,16,0.4)",
         "rgba(16,16,16,0.2)"
     ],
-    "python.languageServer": "Jedi",
+    "python.languageServer": "Pylance",
     "python.linting.enabled": false,
     "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "python.terminal.activateEnvironment": false,
@@ -87,6 +87,7 @@
     "terminal.integrated.showExitAlert": false,
     "terminal.integrated.tabs.enabled": false,
     "window.openFilesInNewWindow": "off",
+    "workbench.colorTheme": "Default Dark+",
     "workbench.colorCustomizations": {
         "editorBracketHighlight.foreground1": "#fff",
         "editorBracketHighlight.foreground2": "#aaa",

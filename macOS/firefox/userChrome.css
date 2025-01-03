@@ -1,0 +1,59 @@
+/* Hides the native tabs */
+#TabsToolbar {
+  padding: 50%;
+  visibility: collapse;
+  overflow: visible;
+}
+
+#TabsToolbar > * {
+  visibility: collapse;
+}
+
+#TabsToolbar .titlebar-buttonbox-container {
+  visibility: visible !important;
+  position: absolute;
+  margin-top: 13.5px;
+  padding-left: 5%;
+}
+
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+  display: none;
+}
+
+#nav-bar {
+  padding-left: 10%;
+/*  padding-top: 1px;*/
+/*  padding-bottom: 1px;*/
+}
+
+/*** Megabar Styler General - version 2023-03-23 ***/
+
+  /*** General Preferences ***/
+  :root {
+    /* Number of pixels of enlargement when URL bar is focused */
+    --mbarstyler-popout-pixels: 1px; /* [0px - 7px] */
+  }
+
+  /*** URL bar enlargement or lack thereof ***/
+
+  /* Compute new position, width, and padding */
+/*  #urlbar[breakout][breakout-extend] {*/
+/*    top: calc(5px - var(--mbarstyler-popout-pixels) - 1px) !important; /* updated for Proton */*/
+/*    left: calc(0px - var(--mbarstyler-popout-pixels) + 1px) !important; /* updated for Proton */*/
+/*    width: calc(100% + (2 * var(--mbarstyler-popout-pixels)) - 2px) !important; /* updated for Proton */*/
+/*    padding: var(--mbarstyler-popout-pixels) !important;*/
+/*  }*/
+/*  [uidensity="compact"] #urlbar[breakout][breakout-extend] {*/
+/*    top: calc(3px - var(--mbarstyler-popout-pixels) + 1px) !important; /* updated for Proton */*/
+/*  }*/
+/*  [uidensity="touch"] #urlbar[breakout][breakout-extend] {*/
+/*    top: calc(4px - var(--mbarstyler-popout-pixels) + 1px) !important; /* updated for Proton */*/
+/*  }*/
+
+  /* Prevent shift of URL bar contents */
+/*  #urlbar[breakout][breakout-extend] > #urlbar-input-container {*/
+/*    height: var(--urlbar-height) !important;*/
+/*    padding: 0 !important;*/
+/*  }*/
+  
+/*** End of: Megabar Styler General ***/
