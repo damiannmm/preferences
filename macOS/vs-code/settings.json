@@ -53,17 +53,17 @@
         "**/node_modules/**": true,
         "**/env/***": true  // additional
     },
-    "indentRainbow.errorColor": "rgba(128,32,32,0.3)",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
     "indentRainbow.excludedLanguages": [ "diff" ],
     "indentRainbow.colors": [
-        "rgba(16,16,16,0.1)",
-        "rgba(16,16,16,0.3)",
         "rgba(16,16,16,0.6)",
+        "rgba(16,16,16,0.3)",
         "rgba(16,16,16,0.4)",
-        "rgba(16,16,16,0.2)"
+        "rgba(16,16,16,0.1)"
     ],
     "python.languageServer": "Pylance",
-    "python.linting.enabled": false,
+    // "python.linting.enabled": false,
     "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "python.terminal.activateEnvironment": false,
     "search.exclude": {

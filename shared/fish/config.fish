@@ -81,9 +81,17 @@ set -e __append_path
 #     end
 # end
 
+function __pwd
+    builtin pwd -L
+    if [ (builtin pwd -L) != (builtin pwd -P) ]
+        builtin pwd -P
+    end
+end
+alias pwd '__pwd'
+
 function __cd
     set tmpdir $dirprev
-    set -g dirprev $PWD
+    set -g dirprev (__pwd)
     if [ "$argv" = "-" ]
         builtin cd $tmpdir
     else
@@ -95,17 +103,10 @@ function __cd
 end
 alias cd '__cd'
 
-function __pwd
-    builtin pwd -L
-    if [ (builtin pwd -L) != (builtin pwd -P) ]
-        builtin pwd -P
-    end
-end
-alias pwd '__pwd'
 
 function __git
     if [ "$argv" = "log" ]
-        command git $argv --all --decorate --oneline --graph
+        command git $argv --all --decorate --oneline --graph --date=relative --format="%C(auto)%h %d %s - %C(blue)%ad%Creset <%C(bold green)%ae%Creset>"
     else
         command git $argv
     end

@@ -1,19 +1,14 @@
-[user]
-	name = Damiann Mangan
-	email = damiann.mm@gmail.com
-	signingkey = 3F1B149118DFFA0D
-[commit]
-	gpgsign = true
-; [credential]
-; 	helper = store
+[credential]
+	helper = store
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitignore
 	ignorecase = true
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	# pager = diff-so-fancy | less --tabs=4 -RFX
 [pull]
 	rebase = false
 [push]
 	default = simple
+	autoSetupRemote = true
 [status]
 	short = true
 [diff]
@@ -32,7 +27,7 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
-[gpg]
-	program = gpg
-[hub]
-	protocol = https
+[includeIf "gitdir:~/Developer/personal/"]
+	path = ~/.gitconfig-personal
+[includeIf "gitdir:~/Developer/finaccel/"]
+	path = ~/.gitconfig-finaccel
